@@ -1,16 +1,15 @@
 package com.leiming.controller;
 
 import com.leiming.pojo.*;
+import com.leiming.pojo.vo.CommentLeveCountsVO;
 import com.leiming.pojo.vo.ItemInfoVO;
 import com.leiming.service.ItemService;
 import com.leiming.utils.JsonResult;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,6 +21,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("items")
+@Api(value = "商品", tags = {"商品相关"})
 public class ItemController {
     @Autowired
     private ItemService itemService;
@@ -44,6 +44,16 @@ public class ItemController {
         itemInfoVO.setItemSpecList(itemsSpecs);
 
         return JsonResult.ok(itemInfoVO);
+    }
+
+    @ApiOperation(value = "获取商品的评论数", notes = "获取商品的评论数", httpMethod = "GET")
+    @GetMapping("/commentLevel")
+    public JsonResult commentLevel(@RequestParam String itemId){
+        if (StringUtils.isBlank(itemId)) {
+            return JsonResult.errorMsg("商品id不能为空");
+        }
+        CommentLeveCountsVO countsVO = itemService.queryCommentCount(itemId);
+        return JsonResult.ok(countsVO);
 
     }
 }

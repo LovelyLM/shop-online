@@ -1,6 +1,4 @@
 package com.leiming.aspect;
-
-import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -24,7 +22,7 @@ public class ServiceLogAspect {
      * @return
      * @throws Throwable
      */
-    @Around("execution(* com.leiming.service.impl..*.*(..))")
+    @Around("execution(* com.leiming.service..*.*(..))")
     public Object recordTimeLog(ProceedingJoinPoint joinPoint) throws Throwable {
         log.info("==== 开始执行:{}.{} ====",
                 joinPoint.getTarget().getClass(),
