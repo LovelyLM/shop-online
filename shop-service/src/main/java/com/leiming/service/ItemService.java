@@ -1,16 +1,20 @@
 package com.leiming.service;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.leiming.enums.CommentLevel;
 import com.leiming.mapper.*;
 import com.leiming.pojo.*;
 import com.leiming.pojo.vo.CommentLeveCountsVO;
 import com.leiming.pojo.vo.ItemCommentVO;
+import com.leiming.pojo.vo.SearchItemsVO;
+import com.leiming.utils.DesensitizationUtil;
+import com.leiming.utils.PagedGridResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -100,12 +104,40 @@ public class ItemService {
      * @return List<ItemCommentVO> 展示商品评论信息vo
      */
     @Transactional(propagation = Propagation.SUPPORTS)
-    public List<ItemCommentVO> queryPagedComments(String itemId, Integer level) {
+    public PagedGridResult queryPagedComments(String itemId, Integer level, Integer page, Integer pageSize) {
         Map<String ,Object> map = new HashMap<>();
         map.put("itemId", itemId);
         map.put("level", level);
+        /**
+         * 开始分页
+         */
+        PageHelper.startPage(page, pageSize);
+
         List<ItemCommentVO> itemCommentVOS = itemsMapperCustom.queryItemComments(map);
-        return itemCommentVOS;
+        /**
+         * 名字显示匿名（名字中间加****）
+         */
+        for (ItemCommentVO itemCommentVO:itemCommentVOS) {
+            itemCommentVO.setNickname(DesensitizationUtil.commonDisplay(itemCommentVO.getNickname()));
+        }
+        PagedGridResult pagedGridResult = setPageGrid(itemCommentVOS, page);
+        return pagedGridResult;
+    }
+
+    /**
+     * 设置分页数据封装
+     * @param list 要分页的对象
+     * @param page 页数
+     * @return PagedGridResult 前端需要的分页对象
+     */
+    private PagedGridResult setPageGrid(List<?> list, Integer page){
+        PageInfo<?> pageList = new PageInfo<>(list);
+        PagedGridResult gridResult = new PagedGridResult();
+        gridResult.setPage(page);
+        gridResult.setRows(list);
+        gridResult.setTotal(pageList.getPages());
+        gridResult.setRecords(pageList.getTotal());
+        return gridResult;
     }
 
 
@@ -130,6 +162,7 @@ public class ItemService {
      * @param itemId 商品id
      * @return 评论数vo
      */
+    @Transactional(propagation = Propagation.SUPPORTS)
     public CommentLeveCountsVO queryCommentCount(String itemId) {
         Integer goodCounts = getCommentCounts(itemId, CommentLevel.GOOD.type);
         Integer normalCounts = getCommentCounts(itemId, CommentLevel.NORMAL.type);
@@ -141,6 +174,37 @@ public class ItemService {
         countsVO.setGoodCounts(goodCounts);
         countsVO.setTotalCounts(totalCounts);
         return countsVO;
+    }
 
+    /**
+     * 根据商品名字查询商品（模糊查询）
+     * @param keywords 搜索关键字
+     * @param sort
+     * @param page
+     * @param pageSize
+     * @return
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    public PagedGridResult searchItems(String keywords, String sort, Integer page, Integer pageSize){
+        Map<String, Object> map = new HashMap<>();
+        map.put("keywords", keywords);
+        map.put("sort", sort);
+
+        PageHelper.startPage(page, pageSize);
+        List<SearchItemsVO> searchItemsVOList = itemsMapperCustom.searchItems(map);
+
+        return setPageGrid(searchItemsVOList, page);
+    }
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    public PagedGridResult searchItemsByThirdCat(Integer catId, String sort, Integer page, Integer pageSize){
+        Map<String, Object> map = new HashMap<>();
+        map.put("catId", catId);
+        map.put("sort", sort);
+
+        PageHelper.startPage(page, pageSize);
+        List<SearchItemsVO> searchItemsVOList = itemsMapperCustom.searchItemsByThirdCat(map);
+
+        return setPageGrid(searchItemsVOList, page);
     }
 }

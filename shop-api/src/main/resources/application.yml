@@ -32,3 +32,7 @@ mapper:
   mappers: com.leiming.my.mapper.MyMapper
   not-empty: false
   identity: MYSQL
+# 分页插件配置pagehelper
+pagehelper:
+  helper-dialect: mysql
+  support-methods-arguments: true
