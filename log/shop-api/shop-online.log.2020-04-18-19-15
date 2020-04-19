@@ -1,0 +1,4 @@
+2020-04-18 19:15:14 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemsBySpecIds ====
+2020-04-18 19:15:14 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：11 毫秒 ====
+2020-04-18 19:15:41 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemsBySpecIds ====
+2020-04-18 19:15:41 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====

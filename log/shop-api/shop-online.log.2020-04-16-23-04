@@ -1,0 +1,16 @@
+2020-04-16 23:04:45 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.getSixNewItemsLazy ====
+2020-04-16 23:04:45 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-16 23:04:45 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.getSixNewItemsLazy ====
+2020-04-16 23:04:45 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-16 23:04:46 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.getSixNewItemsLazy ====
+2020-04-16 23:04:46 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-16 23:04:49 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.getSixNewItemsLazy ====
+2020-04-16 23:04:49 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-16 23:04:49 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.getSixNewItemsLazy ====
+2020-04-16 23:04:49 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-16 23:04:50 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.getSixNewItemsLazy ====
+2020-04-16 23:04:50 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-16 23:04:51 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.getSixNewItemsLazy ====
+2020-04-16 23:04:51 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-16 23:04:51 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.getSixNewItemsLazy ====
+2020-04-16 23:04:51 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：2 毫秒 ====

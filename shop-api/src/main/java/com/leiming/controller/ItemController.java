@@ -9,6 +9,7 @@ import com.leiming.utils.JsonResult;
 import com.leiming.utils.PagedGridResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +20,7 @@ import java.util.List;
  * Create by LovelyLM
  * 2020/4/6 22:54
  * V 1.0
+ * @author Leiming
  */
 
 @RestController
@@ -90,7 +92,7 @@ public class ItemController extends BaseController{
             page = 1;
         }
         if (pageSize == null){
-            pageSize = PAGE_SIZE;//默认20页
+            pageSize = PAGE_SIZE;
         }
         PagedGridResult pagedGridResult = itemService.searchItems(keywords, sort, page, pageSize);
         return JsonResult.ok(pagedGridResult);
@@ -109,9 +111,18 @@ public class ItemController extends BaseController{
             page = 1;
         }
         if (pageSize == null){
-            pageSize = PAGE_SIZE;//默认20页
+            pageSize = PAGE_SIZE;
         }
         PagedGridResult pagedGridResult = itemService.searchItemsByThirdCat(catId, sort, page, pageSize);
         return JsonResult.ok(pagedGridResult);
+    }
+
+    @ApiOperation(value = "根据商品ids查询所有商品信息", notes = "用于刷新购物车商品信息", httpMethod = "GET")
+    @GetMapping("/refresh")
+    public JsonResult refresh(@ApiParam(name = "itemSpecIds", value = "拼接的ids", required = true) @RequestParam String itemSpecIds ){
+        if (StrUtil.isBlank(itemSpecIds)){
+            return JsonResult.errorMsg("商品规格id不能为空");
+        }
+        return JsonResult.ok(itemService.queryItemsBySpecIds(itemSpecIds));
     }
 }

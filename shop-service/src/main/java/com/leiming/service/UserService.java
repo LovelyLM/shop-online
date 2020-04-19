@@ -14,6 +14,10 @@ import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 import java.util.Date;
 
+
+/**
+ * @author Leiming
+ */
 @Service
 public class UserService {
     @Autowired
@@ -25,10 +29,10 @@ public class UserService {
 
     /**
      * 查询用户名是否存在
-     * @param username
-     * @return
+     * @param username 用户名
+     * @return boolean
      */
-    @Transactional(propagation = Propagation.SUPPORTS)
+    @Transactional(propagation = Propagation.NOT_SUPPORTED)
     public boolean queryUsernameIsExit(String username) {
 
         Example userExample = new Example(Users.class);
@@ -40,11 +44,11 @@ public class UserService {
     }
 
     /**
-     * 用户注册
+     * 用户注册,保存用户
      * @param  userBo 前端传入的用户注册信息
      * @return 用户model对象
      */
-    @Transactional(propagation = Propagation.REQUIRED)
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     public Users createUser(UserBo userBo) {
 
         Users user = new Users();
@@ -76,9 +80,9 @@ public class UserService {
     /**
      * 用户登录
      * @param userBo 前端传入的用户登录信息
-     * @return 用户model对象
+     * @return Users 用户model对象
      */
-    @Transactional(propagation = Propagation.SUPPORTS)
+    @Transactional(propagation = Propagation.NOT_SUPPORTED)
     public Users queryUserForLogin(UserBo userBo) {
         Example userExample = new Example(Users.class);
         Example.Criteria criteria = userExample.createCriteria();
@@ -88,7 +92,6 @@ public class UserService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Users user = usersMapper.selectOneByExample(userExample);
-        return user;
+        return usersMapper.selectOneByExample(userExample);
     }
 }

@@ -1,0 +1,30 @@
+2020-04-19 19:03:05 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.queryAllCats ====
+2020-04-19 19:03:05 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CarouselService.queryAll ====
+2020-04-19 19:03:05 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-19 19:03:05 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：7 毫秒 ====
+2020-04-19 19:03:05 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-19 19:03:05 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-19 19:03:07 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-19 19:03:07 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-19 19:03:08 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemById ====
+2020-04-19 19:03:08 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryPagedComments ====
+2020-04-19 19:03:08 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryCommentCount ====
+2020-04-19 19:03:08 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-19 19:03:08 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemList ====
+2020-04-19 19:03:08 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-19 19:03:08 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemParam ====
+2020-04-19 19:03:08 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：14 毫秒 ====
+2020-04-19 19:03:08 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：16 毫秒 ====
+2020-04-19 19:03:08 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：10 毫秒 ====
+2020-04-19 19:03:08 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemSpecList ====
+2020-04-19 19:03:08 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-19 19:03:11 INFO  ShopCatController:31 - 购物车信息：ShopcartBO(itemId=cake-1006, itemImgUrl=http://122.152.205.72:88/foodie/cake-1006/img2.png, itemName=【天天吃货】机器猫最爱 铜锣烧 最美下午茶, specId=cake-1006-spec-1, specName=巧克力, buyCounts=2, priceDiscount=11700, priceNormal=13000)
+2020-04-19 19:03:13 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemsBySpecIds ====
+2020-04-19 19:03:13 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-19 19:03:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemsBySpecIds ====
+2020-04-19 19:03:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-19 19:03:26 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemsBySpecIds ====
+2020-04-19 19:03:26 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-19 19:03:40 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-19 19:03:40 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：15 毫秒 ====
+2020-04-19 19:03:46 WARN  DefaultHandlerExceptionResolver:199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]

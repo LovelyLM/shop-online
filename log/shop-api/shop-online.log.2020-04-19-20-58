@@ -1,0 +1,7 @@
+2020-04-19 20:58:36 INFO  OrdersController:33 - 订单信息：{
+    "payMethod": 1,
+    "leftMsg": "",
+    "userId": "200418BBSXWZC568",
+    "itemSpecIds": "7,cake-1006-spec-1,cookies-65-spec-1",
+    "addressId": "200418GRX5445XWH"
+}

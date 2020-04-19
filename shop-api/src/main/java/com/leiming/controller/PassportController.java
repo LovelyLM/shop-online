@@ -100,7 +100,8 @@ public class PassportController {
                              HttpServletRequest request) {
         CookieUtils.deleteCookie(request, response, "user");
 
-        //TODO
+        //TODO 生成用户token，存入redis会话
+        //TODO 同步购物车数据
 
         return JsonResult.ok();
     }

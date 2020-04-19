@@ -1,0 +1,16 @@
+2020-04-18 13:07:46 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItemsByThirdCat ====
+2020-04-18 13:07:46 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-18 13:07:47 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItemsByThirdCat ====
+2020-04-18 13:07:47 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：18 毫秒 ====
+2020-04-18 13:07:48 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItemsByThirdCat ====
+2020-04-18 13:07:48 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：11 毫秒 ====
+2020-04-18 13:07:51 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItemsByThirdCat ====
+2020-04-18 13:07:51 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：7 毫秒 ====
+2020-04-18 13:07:51 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItemsByThirdCat ====
+2020-04-18 13:07:51 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-18 13:07:54 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItemsByThirdCat ====
+2020-04-18 13:07:54 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：9 毫秒 ====
+2020-04-18 13:07:57 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItemsByThirdCat ====
+2020-04-18 13:07:57 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：9 毫秒 ====
+2020-04-18 13:07:59 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItemsByThirdCat ====
+2020-04-18 13:07:59 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：7 毫秒 ====

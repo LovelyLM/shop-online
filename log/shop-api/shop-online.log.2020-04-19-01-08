@@ -1,0 +1,34 @@
+2020-04-19 01:08:10 INFO  Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-19 01:08:11 INFO  Application:55 - Starting Application on LovelyLM with PID 14324 (D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online\shop-api\target\classes started by Leiming in D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online)
+2020-04-19 01:08:11 INFO  Application:651 - No active profile set, falling back to default profiles: default
+2020-04-19 01:08:12 INFO  TomcatWebServer:92 - Tomcat initialized with port(s): 8088 (http)
+2020-04-19 01:08:13 INFO  ContextLoader:284 - Root WebApplicationContext: initialization completed in 1676 ms
+2020-04-19 01:08:14 INFO  ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-19 01:08:14 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-04-19 01:08:14 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-04-19 01:08:14 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-04-19 01:08:14 INFO  MapperCacheDisabler:83 - Clear EntityHelper entityTableMap cache.
+2020-04-19 01:08:14 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2020-04-19 01:08:14 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2020-04-19 01:08:15 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2020-04-19 01:08:15 INFO  CachingOperationNameGenerator:40 - Generating unique operation named: searchUsingGET_1
+2020-04-19 01:08:15 INFO  CachingOperationNameGenerator:40 - Generating unique operation named: subCatUsingGET_1
+2020-04-19 01:08:15 INFO  CachingOperationNameGenerator:40 - Generating unique operation named: listUsingPOST_1
+2020-04-19 01:08:15 INFO  CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_1
+2020-04-19 01:08:15 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2020-04-19 01:08:15 INFO  Application:61 - Started Application in 4.453 seconds (JVM running for 5.128)
+2020-04-19 01:08:15 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-19 01:08:15 INFO  DispatcherServlet:547 - Completed initialization in 9 ms
+2020-04-19 01:08:15 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-19 01:08:15 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-19 01:08:15 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-19 01:08:15 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：221 毫秒 ====
+2020-04-19 01:08:18 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-19 01:08:18 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-19 01:08:34 INFO  OrdersController:31 - 订单信息：{
+    "payMethod": "2",
+    "leftMsg": "",
+    "userId": "200418BBSXWZC568",
+    "itemSpecIds": "7,cake-1005-spec-1",
+    "addressId": "200418GRX5445XWH"
+}

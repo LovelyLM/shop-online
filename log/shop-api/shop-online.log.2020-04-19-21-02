@@ -1,0 +1,16 @@
+2020-04-19 21:02:14 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryPagedComments ====
+2020-04-19 21:02:14 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryCommentCount ====
+2020-04-19 21:02:14 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemById ====
+2020-04-19 21:02:14 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-19 21:02:14 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemList ====
+2020-04-19 21:02:14 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：17 毫秒 ====
+2020-04-19 21:02:14 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：27 毫秒 ====
+2020-04-19 21:02:14 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemParam ====
+2020-04-19 21:02:14 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-19 21:02:14 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemSpecList ====
+2020-04-19 21:02:14 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-19 21:02:14 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：72 毫秒 ====
+2020-04-19 21:02:47 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.updateUserAddressToBeDefault ====
+2020-04-19 21:02:47 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-19 21:02:47 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-19 21:02:47 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：2 毫秒 ====

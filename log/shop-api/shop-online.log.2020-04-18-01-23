@@ -1,0 +1,16 @@
+2020-04-18 01:23:08 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-18 01:23:08 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：15 毫秒 ====
+2020-04-18 01:23:09 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-18 01:23:09 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-18 01:23:09 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-18 01:23:09 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-18 01:23:10 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-18 01:23:10 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：11 毫秒 ====
+2020-04-18 01:23:10 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-18 01:23:10 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-18 01:23:10 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-18 01:23:10 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：14 毫秒 ====
+2020-04-18 01:23:11 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-18 01:23:11 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：7 毫秒 ====
+2020-04-18 01:23:11 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-18 01:23:11 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====

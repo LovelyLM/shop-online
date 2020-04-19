@@ -1,0 +1,5 @@
+2020-04-06 23:02:56 INFO  Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-06 23:02:57 INFO  Application:55 - Starting Application on LovelyLM with PID 18852 (D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online\shop-api\target\classes started by Leiming in D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online)
+2020-04-06 23:02:57 INFO  Application:651 - No active profile set, falling back to default profiles: default
+2020-04-06 23:02:59 INFO  TomcatWebServer:92 - Tomcat initialized with port(s): 8088 (http)
+2020-04-06 23:02:59 INFO  ContextLoader:284 - Root WebApplicationContext: initialization completed in 2271 ms

@@ -1,0 +1,10 @@
+2020-04-18 22:06:05 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-18 22:06:05 INFO  DispatcherServlet:547 - Completed initialization in 9 ms
+2020-04-18 22:06:05 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-18 22:06:06 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-18 22:06:06 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-18 22:06:06 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：210 毫秒 ====
+2020-04-18 22:06:48 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.addNewUserAddress ====
+2020-04-18 22:06:48 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：30 毫秒 ====
+2020-04-18 22:06:48 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-18 22:06:48 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====

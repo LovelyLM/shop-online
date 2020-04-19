@@ -42,12 +42,12 @@ public class CategoryService {
 
     /**
      * 根据根节点查询所有子节点分类
-     * @param RootId 根节点分类id
+     * @param rootId 根节点分类id
      * @return List<CategoryVO> 子节点vo，这里子节点有两层
      */
     @Transactional(propagation = Propagation.SUPPORTS)
-    public List<CategoryVO> querySubCatList(Integer RootId) {
-        return categoryMapperCustom.getSubCatList(RootId);
+    public List<CategoryVO> querySubCatList(Integer rootId) {
+        return categoryMapperCustom.getSubCatList(rootId);
     }
 
     /**

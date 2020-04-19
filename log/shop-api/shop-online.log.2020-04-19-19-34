@@ -1,0 +1,5 @@
+2020-04-19 19:34:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-19 19:34:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：10 毫秒 ====
+2020-04-19 19:34:24 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-19 19:34:24 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-19 19:34:27 WARN  DefaultHandlerExceptionResolver:199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]

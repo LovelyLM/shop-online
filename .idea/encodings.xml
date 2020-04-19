@@ -3,9 +3,16 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-mapper/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-pojo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>

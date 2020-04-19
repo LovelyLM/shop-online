@@ -1,0 +1,66 @@
+2020-04-18 20:05:01 INFO  TomcatWebServer:92 - Tomcat initialized with port(s): 8088 (http)
+2020-04-18 20:05:01 INFO  ContextLoader:284 - Root WebApplicationContext: initialization completed in 1836 ms
+2020-04-18 20:05:03 INFO  ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-18 20:05:03 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-04-18 20:05:03 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-04-18 20:05:03 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-04-18 20:05:03 INFO  MapperCacheDisabler:83 - Clear EntityHelper entityTableMap cache.
+2020-04-18 20:05:03 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2020-04-18 20:05:03 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2020-04-18 20:05:03 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2020-04-18 20:05:03 INFO  CachingOperationNameGenerator:40 - Generating unique operation named: searchUsingGET_1
+2020-04-18 20:05:03 INFO  CachingOperationNameGenerator:40 - Generating unique operation named: subCatUsingGET_1
+2020-04-18 20:05:03 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2020-04-18 20:05:03 INFO  Application:61 - Started Application in 4.581 seconds (JVM running for 5.379)
+2020-04-18 20:05:20 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-18 20:05:20 INFO  DispatcherServlet:547 - Completed initialization in 8 ms
+2020-04-18 20:05:20 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CarouselService.queryAll ====
+2020-04-18 20:05:20 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.queryAllCats ====
+2020-04-18 20:05:20 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-18 20:05:20 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-18 20:05:20 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：255 毫秒 ====
+2020-04-18 20:05:20 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：255 毫秒 ====
+2020-04-18 20:05:20 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-18 20:05:20 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：7 毫秒 ====
+2020-04-18 20:05:21 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemsBySpecIds ====
+2020-04-18 20:05:21 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：13 毫秒 ====
+2020-04-18 20:05:31 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.queryAllCats ====
+2020-04-18 20:05:31 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CarouselService.queryAll ====
+2020-04-18 20:05:31 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-18 20:05:31 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：7 毫秒 ====
+2020-04-18 20:05:31 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-18 20:05:31 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-18 20:05:32 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-18 20:05:32 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-18 20:05:33 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryPagedComments ====
+2020-04-18 20:05:33 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryCommentCount ====
+2020-04-18 20:05:33 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemById ====
+2020-04-18 20:05:33 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：12 毫秒 ====
+2020-04-18 20:05:33 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：40 毫秒 ====
+2020-04-18 20:05:33 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemList ====
+2020-04-18 20:05:33 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-18 20:05:33 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemParam ====
+2020-04-18 20:05:33 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-18 20:05:33 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemSpecList ====
+2020-04-18 20:05:33 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-18 20:05:33 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：88 毫秒 ====
+2020-04-18 20:05:36 INFO  ShopCatController:31 - 购物车信息：ShopcartBO(itemId=cake-1005, itemImgUrl=http://122.152.205.72:88/foodie/cake-1005/img1.png, itemName=【天天吃货】进口美食凤梨酥, specId=cake-1005-spec-1, specName=巧克力, buyCounts=4, priceDiscount=16020, priceNormal=17800)
+2020-04-18 20:05:38 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemsBySpecIds ====
+2020-04-18 20:05:38 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-18 20:05:51 INFO  ShopCatController:31 - 购物车信息：ShopcartBO(itemId=cake-1005, itemImgUrl=http://122.152.205.72:88/foodie/cake-1005/img1.png, itemName=【天天吃货】进口美食凤梨酥, specId=cake-1005-spec-1, specName=巧克力, buyCounts=10, priceDiscount=16020, priceNormal=17800)
+2020-04-18 20:05:52 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemsBySpecIds ====
+2020-04-18 20:05:52 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-18 20:05:55 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemsBySpecIds ====
+2020-04-18 20:05:55 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-18 20:05:56 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemById ====
+2020-04-18 20:05:56 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryCommentCount ====
+2020-04-18 20:05:56 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryPagedComments ====
+2020-04-18 20:05:56 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-18 20:05:56 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemList ====
+2020-04-18 20:05:56 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-18 20:05:56 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：7 毫秒 ====
+2020-04-18 20:05:56 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-18 20:05:56 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemParam ====
+2020-04-18 20:05:56 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-18 20:05:56 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemSpecList ====
+2020-04-18 20:05:56 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====

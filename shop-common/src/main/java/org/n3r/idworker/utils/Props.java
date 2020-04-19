@@ -9,6 +9,9 @@ import java.util.Properties;
 import static java.io.File.separator;
 import static org.n3r.idworker.utils.Serializes.closeQuietly;
 
+/**
+ * @author Leiming
+ */
 public class Props {
     static Logger log = LoggerFactory.getLogger(Props.class);
 
@@ -28,6 +31,9 @@ public class Props {
     }
 
 
+    /**
+     *
+     */
     enum Silent {ON, OFF}
 
     public static InputStream tryResource(String propertiesFileName, String userHomeBasePath, Silent silent) {

@@ -1,0 +1,16 @@
+2020-04-18 11:56:51 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItems ====
+2020-04-18 11:56:51 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：9 毫秒 ====
+2020-04-18 11:56:52 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItems ====
+2020-04-18 11:56:52 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-18 11:56:54 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItems ====
+2020-04-18 11:56:54 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-18 11:56:54 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItems ====
+2020-04-18 11:56:54 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-18 11:56:55 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItems ====
+2020-04-18 11:56:55 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-18 11:56:56 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItems ====
+2020-04-18 11:56:56 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：7 毫秒 ====
+2020-04-18 11:56:59 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItems ====
+2020-04-18 11:56:59 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：9 毫秒 ====
+2020-04-18 11:56:59 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItems ====
+2020-04-18 11:56:59 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：9 毫秒 ====

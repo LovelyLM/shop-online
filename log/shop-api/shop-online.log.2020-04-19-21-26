@@ -1,0 +1,41 @@
+2020-04-19 21:26:12 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-19 21:26:12 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.OrderService.createOrder ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryUserAddress ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：2 毫秒 ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemSpecById ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：1 毫秒 ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemById ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：1 毫秒 ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemMainImgById ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：1 毫秒 ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.decreaseItemSpecStock ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：2 毫秒 ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemSpecById ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：2 毫秒 ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemById ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：2 毫秒 ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemMainImgById ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：2 毫秒 ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.decreaseItemSpecStock ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：1 毫秒 ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemSpecById ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：1 毫秒 ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemById ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：1 毫秒 ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemMainImgById ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：2 毫秒 ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.decreaseItemSpecStock ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：2 毫秒 ====
+2020-04-19 21:26:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：31 毫秒 ====
+2020-04-19 21:26:22 INFO  OrdersController:36 - 订单信息：{
+    "payMethod": 1,
+    "leftMsg": "",
+    "userId": "200418BBSXWZC568",
+    "itemSpecIds": "7,8,9",
+    "addressId": "200418GRX5445XWH"
+}
+2020-04-19 21:26:44 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-19 21:26:44 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：2 毫秒 ====
+2020-04-19 21:26:45 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-19 21:26:45 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：2 毫秒 ====

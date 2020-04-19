@@ -1,0 +1,7 @@
+2020-04-19 01:06:04 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-19 01:06:04 INFO  DispatcherServlet:547 - Completed initialization in 10 ms
+2020-04-19 01:06:04 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-19 01:06:05 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-19 01:06:05 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-19 01:06:05 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：333 毫秒 ====
+2020-04-19 01:06:25 INFO  OrdersController:30 - 订单信息：com.leiming.pojo.bo.SubmitOrderBO@6698a68

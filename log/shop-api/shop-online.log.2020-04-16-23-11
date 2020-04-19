@@ -1,0 +1,10 @@
+2020-04-16 23:11:03 INFO  ServiceLogAspect:29 - ==== 开始执行:class UserServiceImpl.queryUserForLogin ====
+2020-04-16 23:11:03 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：2 毫秒 ====
+2020-04-16 23:11:05 INFO  ServiceLogAspect:29 - ==== 开始执行:class UserServiceImpl.queryUserForLogin ====
+2020-04-16 23:11:05 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：2 毫秒 ====
+2020-04-16 23:11:14 INFO  ServiceLogAspect:29 - ==== 开始执行:class UserServiceImpl.queryUserForLogin ====
+2020-04-16 23:11:14 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-16 23:11:18 INFO  ServiceLogAspect:29 - ==== 开始执行:class UserServiceImpl.queryUserForLogin ====
+2020-04-16 23:11:18 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：2 毫秒 ====
+2020-04-16 23:11:20 INFO  ServiceLogAspect:29 - ==== 开始执行:class UserServiceImpl.queryUserForLogin ====
+2020-04-16 23:11:20 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：3 毫秒 ====

@@ -1,0 +1,58 @@
+2020-04-16 23:02:15 INFO  Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-16 23:02:16 INFO  Application:55 - Starting Application on LovelyLM with PID 27312 (D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online\shop-api\target\classes started by Leiming in D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online)
+2020-04-16 23:02:16 INFO  Application:651 - No active profile set, falling back to default profiles: default
+2020-04-16 23:02:22 INFO  TomcatWebServer:92 - Tomcat initialized with port(s): 8088 (http)
+2020-04-16 23:02:22 INFO  ContextLoader:284 - Root WebApplicationContext: initialization completed in 5313 ms
+2020-04-16 23:02:25 INFO  ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 23:02:25 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-04-16 23:02:25 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-04-16 23:02:25 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-04-16 23:02:25 INFO  MapperCacheDisabler:83 - Clear EntityHelper entityTableMap cache.
+2020-04-16 23:02:25 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2020-04-16 23:02:25 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2020-04-16 23:02:25 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2020-04-16 23:02:26 INFO  CachingOperationNameGenerator:40 - Generating unique operation named: subCatUsingGET_1
+2020-04-16 23:02:26 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2020-04-16 23:02:26 INFO  Application:61 - Started Application in 11.196 seconds (JVM running for 12.737)
+2020-04-16 23:02:40 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-16 23:02:40 INFO  DispatcherServlet:547 - Completed initialization in 8 ms
+2020-04-16 23:02:40 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.queryAllCats ====
+2020-04-16 23:02:40 INFO  ServiceLogAspect:29 - ==== 开始执行:class CarouselServiceImpl.queryAll ====
+2020-04-16 23:02:40 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-16 23:02:40 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-16 23:02:40 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：412 毫秒 ====
+2020-04-16 23:02:40 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：412 毫秒 ====
+2020-04-16 23:02:40 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.getSixNewItemsLazy ====
+2020-04-16 23:02:40 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：42 毫秒 ====
+2020-04-16 23:02:44 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.querySubCatList ====
+2020-04-16 23:02:44 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：11 毫秒 ====
+2020-04-16 23:02:44 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.querySubCatList ====
+2020-04-16 23:02:44 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-16 23:02:45 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.querySubCatList ====
+2020-04-16 23:02:45 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-16 23:02:45 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.querySubCatList ====
+2020-04-16 23:02:45 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：7 毫秒 ====
+2020-04-16 23:02:45 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.querySubCatList ====
+2020-04-16 23:02:45 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-16 23:02:45 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.querySubCatList ====
+2020-04-16 23:02:45 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-16 23:02:46 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.querySubCatList ====
+2020-04-16 23:02:46 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-16 23:02:46 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.querySubCatList ====
+2020-04-16 23:02:46 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-16 23:02:46 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.querySubCatList ====
+2020-04-16 23:02:46 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-16 23:02:46 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.querySubCatList ====
+2020-04-16 23:02:46 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-16 23:02:57 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.getSixNewItemsLazy ====
+2020-04-16 23:02:57 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-16 23:02:58 INFO  ServiceLogAspect:29 - ==== 开始执行:class ItemServiceImpl.queryItemById ====
+2020-04-16 23:02:58 INFO  ServiceLogAspect:29 - ==== 开始执行:class ItemServiceImpl.queryCommentCount ====
+2020-04-16 23:02:58 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：12 毫秒 ====
+2020-04-16 23:02:58 INFO  ServiceLogAspect:29 - ==== 开始执行:class ItemServiceImpl.queryItemList ====
+2020-04-16 23:02:58 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-16 23:02:58 INFO  ServiceLogAspect:29 - ==== 开始执行:class ItemServiceImpl.queryItemParam ====
+2020-04-16 23:02:58 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：29 毫秒 ====
+2020-04-16 23:02:58 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：17 毫秒 ====
+2020-04-16 23:02:58 INFO  ServiceLogAspect:29 - ==== 开始执行:class ItemServiceImpl.queryItemSpecList ====
+2020-04-16 23:02:58 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：22 毫秒 ====

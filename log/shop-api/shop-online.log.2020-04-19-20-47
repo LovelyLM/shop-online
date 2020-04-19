@@ -1,0 +1,6 @@
+2020-04-19 20:47:52 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.queryAllCats ====
+2020-04-19 20:47:52 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CarouselService.queryAll ====
+2020-04-19 20:47:52 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：33 毫秒 ====
+2020-04-19 20:47:52 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：31 毫秒 ====
+2020-04-19 20:47:52 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-19 20:47:52 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：14 毫秒 ====

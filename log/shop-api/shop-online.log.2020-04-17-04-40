@@ -1,0 +1,2 @@
+2020-04-17 04:40:30 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-17 04:40:30 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：9 毫秒 ====

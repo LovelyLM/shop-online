@@ -1,13 +1,16 @@
 package com.leiming.service;
 
+import cn.hutool.core.util.StrUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.leiming.enums.CommentLevel;
+import com.leiming.enums.YesOrNo;
 import com.leiming.mapper.*;
 import com.leiming.pojo.*;
 import com.leiming.pojo.vo.CommentLeveCountsVO;
 import com.leiming.pojo.vo.ItemCommentVO;
 import com.leiming.pojo.vo.SearchItemsVO;
+import com.leiming.pojo.vo.ShopcartVO;
 import com.leiming.utils.DesensitizationUtil;
 import com.leiming.utils.PagedGridResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,14 +18,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+import java.util.*;
 
 /**
  * Create by LovelyLM
  * 2020/4/6 22:44
  * V 1.0
+ * @author Leiming
  */
 @Service
 public class ItemService {
@@ -114,14 +117,10 @@ public class ItemService {
         PageHelper.startPage(page, pageSize);
 
         List<ItemCommentVO> itemCommentVOS = itemsMapperCustom.queryItemComments(map);
-        /**
-         * 名字显示匿名（名字中间加****）
-         */
         for (ItemCommentVO itemCommentVO:itemCommentVOS) {
             itemCommentVO.setNickname(DesensitizationUtil.commonDisplay(itemCommentVO.getNickname()));
         }
-        PagedGridResult pagedGridResult = setPageGrid(itemCommentVOS, page);
-        return pagedGridResult;
+        return setPageGrid(itemCommentVOS, page);
     }
 
     /**
@@ -145,10 +144,10 @@ public class ItemService {
      * 根据商品id以及评论等级获取评论数量
      * @param itemId 商品id
      * @param level 评论等级，中、好、差评
-     * @return
+     * @return Integer
      */
-    @Transactional(propagation = Propagation.SUPPORTS)
-    Integer getCommentCounts(String itemId, Integer level) {
+    @Transactional(propagation = Propagation.NOT_SUPPORTED)
+    public Integer getCommentCounts(String itemId, Integer level) {
         ItemsComments comments = new ItemsComments();
         comments.setItemId(itemId);
         if (level != null) {
@@ -162,7 +161,7 @@ public class ItemService {
      * @param itemId 商品id
      * @return 评论数vo
      */
-    @Transactional(propagation = Propagation.SUPPORTS)
+    @Transactional(propagation = Propagation.NOT_SUPPORTED)
     public CommentLeveCountsVO queryCommentCount(String itemId) {
         Integer goodCounts = getCommentCounts(itemId, CommentLevel.GOOD.type);
         Integer normalCounts = getCommentCounts(itemId, CommentLevel.NORMAL.type);
@@ -184,7 +183,7 @@ public class ItemService {
      * @param pageSize
      * @return
      */
-    @Transactional(propagation = Propagation.SUPPORTS)
+    @Transactional(propagation = Propagation.NOT_SUPPORTED)
     public PagedGridResult searchItems(String keywords, String sort, Integer page, Integer pageSize){
         Map<String, Object> map = new HashMap<>();
         map.put("keywords", keywords);
@@ -196,7 +195,7 @@ public class ItemService {
         return setPageGrid(searchItemsVOList, page);
     }
 
-    @Transactional(propagation = Propagation.SUPPORTS)
+    @Transactional(propagation = Propagation.NOT_SUPPORTED)
     public PagedGridResult searchItemsByThirdCat(Integer catId, String sort, Integer page, Integer pageSize){
         Map<String, Object> map = new HashMap<>();
         map.put("catId", catId);
@@ -207,4 +206,52 @@ public class ItemService {
 
         return setPageGrid(searchItemsVOList, page);
     }
+
+    /**
+     *
+     * @param specIds
+     * @return List
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    public List<ShopcartVO> queryItemsBySpecIds(String specIds){
+        List<String> split = StrUtil.split(specIds, ',');
+        return itemsMapperCustom.queryItemsBySpecIds(split);
+    }
+
+    /**
+     * 根据规格id查询规格
+     * @param itemSpecId 规格id
+     * @return ItemsSpec 规格model
+     */
+    public ItemsSpec queryItemSpecById(String itemSpecId) {
+
+        return itemsSpecMapper.selectByPrimaryKey(itemSpecId);
+    }
+
+    /**
+     * 根据商品id查询商品主图
+     * @param itemId 商品id
+     * @return String
+     */
+    public String queryItemMainImgById(String itemId) {
+        ItemsImg itemsImg = new ItemsImg();
+        itemsImg.setItemId(itemId);
+        itemsImg.setIsMain(YesOrNo.YSE.type);
+        ItemsImg result = itemsImgMapper.selectOne(itemsImg);
+        return result != null ? result.getUrl() : "";
+    }
+
+    /**
+     * 减库存
+     * @param specId
+     * @param buyCounts
+     */
+    public void decreaseItemSpecStock(String specId, int buyCounts) {
+
+        int result = itemsMapperCustom.decreaseItemSpecStock(specId, buyCounts);
+        if (result != 1) {
+            throw new RuntimeException("订单创建失败，原因：库存不足!");
+        }
+    }
+
 }

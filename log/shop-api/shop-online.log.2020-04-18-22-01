@@ -1,0 +1,44 @@
+2020-04-18 22:01:03 INFO  Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-18 22:01:04 INFO  Application:55 - Starting Application on LovelyLM with PID 12584 (D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online\shop-api\target\classes started by Leiming in D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online)
+2020-04-18 22:01:04 INFO  Application:651 - No active profile set, falling back to default profiles: default
+2020-04-18 22:01:05 INFO  TomcatWebServer:92 - Tomcat initialized with port(s): 8088 (http)
+2020-04-18 22:01:05 INFO  ContextLoader:284 - Root WebApplicationContext: initialization completed in 1470 ms
+2020-04-18 22:01:06 WARN  AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'passportController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.leiming.controller.PassportController] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2020-04-18 22:01:06 ERROR SpringApplication:826 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'passportController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.leiming.controller.PassportController] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1286)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1201)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.leiming.Application.main(Application.java:14)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.leiming.controller.PassportController] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 18 more
+Caused by: java.lang.NoClassDefFoundError: com/leiming/pojo/bo/UserBo
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 20 more
+Caused by: java.lang.ClassNotFoundException: com.leiming.pojo.bo.UserBo
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 more

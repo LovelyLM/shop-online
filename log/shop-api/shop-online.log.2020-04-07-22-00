@@ -1,0 +1,11 @@
+2020-04-07 22:00:44 INFO  Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-07 22:00:46 INFO  Application:55 - Starting Application on LovelyLM with PID 15744 (D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online\shop-api\target\classes started by Leiming in D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online)
+2020-04-07 22:00:46 INFO  Application:651 - No active profile set, falling back to default profiles: default
+2020-04-07 22:00:54 INFO  TomcatWebServer:92 - Tomcat initialized with port(s): 8088 (http)
+2020-04-07 22:00:55 INFO  ContextLoader:284 - Root WebApplicationContext: initialization completed in 8591 ms
+2020-04-07 22:00:59 INFO  ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-07 22:00:59 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-04-07 22:00:59 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-04-07 22:00:59 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-04-07 22:00:59 INFO  MapperCacheDisabler:83 - Clear EntityHelper entityTableMap cache.
+2020-04-07 22:00:59 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed

@@ -1,9 +1,15 @@
 package com.leiming.pojo;
 
+import lombok.Builder;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * @author Leiming
+ */
+@Builder
 @Table(name = "items_spec")
 public class ItemsSpec {
     /**

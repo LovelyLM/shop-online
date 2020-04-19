@@ -1,0 +1,22 @@
+2020-04-18 11:27:32 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-18 11:27:32 INFO  DispatcherServlet:547 - Completed initialization in 10 ms
+2020-04-18 11:27:32 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItems ====
+2020-04-18 11:27:32 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-18 11:27:32 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-18 11:27:33 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：299 毫秒 ====
+2020-04-18 11:27:35 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItems ====
+2020-04-18 11:27:35 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：20 毫秒 ====
+2020-04-18 11:27:39 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryPagedComments ====
+2020-04-18 11:27:39 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryCommentCount ====
+2020-04-18 11:27:39 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemById ====
+2020-04-18 11:27:39 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：15 毫秒 ====
+2020-04-18 11:27:39 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：15 毫秒 ====
+2020-04-18 11:27:39 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemList ====
+2020-04-18 11:27:39 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：19 毫秒 ====
+2020-04-18 11:27:39 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：18 毫秒 ====
+2020-04-18 11:27:39 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemParam ====
+2020-04-18 11:27:39 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-18 11:27:39 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemSpecList ====
+2020-04-18 11:27:39 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-18 11:27:54 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItems ====
+2020-04-18 11:27:54 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：12 毫秒 ====

@@ -1,0 +1,8 @@
+2020-04-18 20:33:14 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-18 20:33:14 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-18 20:33:15 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-18 20:33:15 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：269 毫秒 ====
+2020-04-18 20:33:30 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-18 20:33:30 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-18 20:33:40 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-18 20:33:40 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：10 毫秒 ====

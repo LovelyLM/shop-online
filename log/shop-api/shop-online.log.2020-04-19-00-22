@@ -1,0 +1,6 @@
+2020-04-19 00:22:38 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-19 00:22:38 INFO  DispatcherServlet:547 - Completed initialization in 9 ms
+2020-04-19 00:22:38 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-19 00:22:38 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-19 00:22:38 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-19 00:22:38 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：224 毫秒 ====

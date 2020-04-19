@@ -1,0 +1,8 @@
+2020-04-17 04:37:19 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-17 04:37:19 INFO  DispatcherServlet:547 - Completed initialization in 37 ms
+2020-04-17 04:37:19 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-17 04:37:19 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-17 04:37:19 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-17 04:37:19 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-17 04:37:20 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：507 毫秒 ====
+2020-04-17 04:37:20 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：508 毫秒 ====

@@ -1,0 +1,14 @@
+2020-04-19 17:59:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItemsByThirdCat ====
+2020-04-19 17:59:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：104 毫秒 ====
+2020-04-19 17:59:29 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemById ====
+2020-04-19 17:59:29 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryCommentCount ====
+2020-04-19 17:59:29 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-19 17:59:29 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemList ====
+2020-04-19 17:59:29 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-19 17:59:29 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemParam ====
+2020-04-19 17:59:29 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：19 毫秒 ====
+2020-04-19 17:59:29 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryPagedComments ====
+2020-04-19 17:59:29 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：9 毫秒 ====
+2020-04-19 17:59:29 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemSpecList ====
+2020-04-19 17:59:29 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：12 毫秒 ====
+2020-04-19 17:59:29 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：9 毫秒 ====

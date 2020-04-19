@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="134e695c-b389-4abe-afee-7342d65a7580" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-13-08" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-14-05" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-14-07" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-15-09" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-15-12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-15-58" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-15-59" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-16-00" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-16-01" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-16-02" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-16-03" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-16-04" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-16-56" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-16-58" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-16-59" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-19-15" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-20-04" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-20-05" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-20-06" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-20-32" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-20-33" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-21-59" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-22-01" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-22-03" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-22-04" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-22-05" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-22-06" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-18-22-24" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-00-21" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-00-22" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-00-23" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-00-26" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-00-27" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-01-05" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-01-06" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-01-07" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-01-08" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-01-09" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-17-56" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-17-58" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-17-59" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-19-01" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-19-02" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-19-03" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-19-04" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-19-33" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-19-34" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-19-35" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-19-36" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-20-01" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-20-47" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-20-53" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-20-54" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-20-55" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-20-58" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-21-00" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-21-01" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-21-02" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-21-03" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-21-04" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-21-05" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-21-20" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-21-23" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-21-24" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-21-25" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-21-26" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-21-27" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/shop-api/shop-online.log.2020-04-19-21-28" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/leiming/controller/AddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/leiming/controller/OrdersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/leiming/controller/ShopCatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-common/src/main/java/com/leiming/enums/OrderStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-common/src/main/java/com/leiming/enums/PayMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-pojo/src/main/java/com/leiming/pojo/bo/AddressBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-pojo/src/main/java/com/leiming/pojo/bo/ShopcartBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-pojo/src/main/java/com/leiming/pojo/bo/SubmitOrderBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-pojo/src/main/java/com/leiming/pojo/vo/ShopcartVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service/src/main/java/com/leiming/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service/src/main/java/com/leiming/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-service/src/test/java/StrUtilSplitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/leiming/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/leiming/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/leiming/controller/PassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/leiming/controller/PassportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-common/src/main/java/com/leiming/enums/CommentLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-common/src/main/java/com/leiming/enums/CommentLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-common/src/main/java/com/leiming/enums/Sex.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-common/src/main/java/com/leiming/enums/Sex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-common/src/main/java/com/leiming/enums/YesOrNo.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-common/src/main/java/com/leiming/enums/YesOrNo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-common/src/main/java/com/leiming/utils/CookieUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-common/src/main/java/com/leiming/utils/CookieUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-common/src/main/java/org/n3r/idworker/Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-common/src/main/java/org/n3r/idworker/Code.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-common/src/main/java/org/n3r/idworker/utils/IPv4Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-common/src/main/java/org/n3r/idworker/utils/IPv4Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-common/src/main/java/org/n3r/idworker/utils/Props.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-common/src/main/java/org/n3r/idworker/utils/Props.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-mapper/shop-mapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shop-online.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-mapper/src/main/java/com/leiming/mapper/ItemsMapperCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-mapper/src/main/java/com/leiming/mapper/ItemsMapperCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-mapper/src/main/java/com/leiming/mapper/OrdersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-mapper/src/main/java/com/leiming/mapper/OrdersMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-mapper/src/main/resources/mapper/ItemsMapperCustom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-mapper/src/main/resources/mapper/ItemsMapperCustom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-pojo/src/main/java/com/leiming/pojo/ItemsSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-pojo/src/main/java/com/leiming/pojo/ItemsSpec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-pojo/src/main/java/com/leiming/pojo/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-pojo/src/main/java/com/leiming/pojo/OrderStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-pojo/src/main/java/com/leiming/pojo/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-pojo/src/main/java/com/leiming/pojo/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-pojo/src/main/java/com/leiming/pojo/UserAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-pojo/src/main/java/com/leiming/pojo/UserAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service/src/main/java/com/leiming/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service/src/main/java/com/leiming/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service/src/main/java/com/leiming/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service/src/main/java/com/leiming/service/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-service/src/main/java/com/leiming/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-service/src/main/java/com/leiming/service/UserService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\LovelyLM\myCodeStudy\Java\Maven Repository" />
+        <option name="userSettingsFile" value="D:\LovelyLM\myCodeStudy\Java\someTools\apache-maven-3.6.1\conf\settings.ali.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ahYsmYLunWs2rfixgGjaxkp4hJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="MyBatis LogindexNum" value="300" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="GrepConsole" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.leiming.controller" />
+      <recent name="com.leiming.pojo.vo" />
+      <recent name="com.leiming.enums" />
+      <recent name="com.leiming.my.mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online\shop-common\src\main\java\com\leiming\utils" />
+      <recent name="D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online\shop-mapper\src\main\resources\mapper" />
+      <recent name="D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online\shop-pojo\src\main\java\com\leiming\pojo\vo" />
+      <recent name="D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online\shop-api\src\main\resources" />
+      <recent name="D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online\shop-common\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="StrUtilSplitTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StrUtilSplitTest" />
+      <module name="shop-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StrUtilSplitTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop-service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StrUtilSplitTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransTest.JsonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test" />
+      <option name="MAIN_CLASS_NAME" value="com.test.TransTest" />
+      <option name="METHOD_NAME" value="JsonTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="shop-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leiming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leiming.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="JUnit.StrUtilSplitTest.test" />
+        <item itemvalue="Application.StrUtilSplitTest" />
+        <item itemvalue="JUnit.TransTest.JsonTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="134e695c-b389-4abe-afee-7342d65a7580" name="Default Changelist" comment="" />
+      <created>1585572252946</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585572252946</updated>
+      <workItem from="1585572256462" duration="11453000" />
+      <workItem from="1585656470570" duration="15073000" />
+      <workItem from="1585675776507" duration="461000" />
+      <workItem from="1585745080992" duration="3890000" />
+      <workItem from="1585831251417" duration="9063000" />
+      <workItem from="1586100386274" duration="15021000" />
+      <workItem from="1586267896377" duration="1478000" />
+      <workItem from="1586435405229" duration="1719000" />
+      <workItem from="1587000118515" duration="584000" />
+      <workItem from="1587000748556" duration="25873000" />
+      <workItem from="1587189509028" duration="349000" />
+      <workItem from="1587189876753" duration="16267000" />
+      <workItem from="1587267288950" duration="494000" />
+      <workItem from="1587267802853" duration="90000" />
+      <workItem from="1587267908356" duration="5007000" />
+      <workItem from="1587283789053" duration="526000" />
+      <workItem from="1587284335577" duration="542000" />
+      <workItem from="1587284964968" duration="417000" />
+      <workItem from="1587285401639" duration="520000" />
+      <workItem from="1587285941331" duration="12218000" />
+    </task>
+    <task id="LOCAL-00001" summary="添加了实体类，mapper以及xml文件">
+      <created>1585587093084</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585587093084</updated>
+    </task>
+    <task id="LOCAL-00002" summary="配置了AOP监控，日志&#10;写了用户退出并清除cookie的controller&#10;导入了hutool工具类">
+      <created>1585845535483</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585845535483</updated>
+    </task>
+    <task id="LOCAL-00003" summary="基本完成了首页信息&#10;完成了商品详情">
+      <created>1586186909792</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586186909792</updated>
+    </task>
+    <task id="LOCAL-00004" summary="完成了项目的注释，正在做查询评论的分页">
+      <created>1587069862997</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587069862998</updated>
+    </task>
+    <task id="LOCAL-00005" summary="完成了项目的注释，正在做查询评论的分页">
+      <created>1587190142132</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587190142132</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="添加了实体类，mapper以及xml文件" />
+    <MESSAGE value="写了两个接口：1.判断用户名是否重复&#10;             2.用户注册" />
+    <MESSAGE value="配置了AOP监控，日志&#10;写了用户退出并清除cookie的controller&#10;导入了hutool工具类" />
+    <MESSAGE value="基本完成了首页信息&#10;完成了商品详情" />
+    <MESSAGE value="完成了项目的注释，正在做查询评论的分页" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了项目的注释，正在做查询评论的分页" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="827" y="423" key="#Custom_Plugin_Repositories" timestamp="1587267520355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="827" y="423" key="#Custom_Plugin_Repositories/0.0.1920.1040@0.0.1920.1040" timestamp="1587267520355" />
+    <state x="1086" y="187" key="#HTTP_Proxy" timestamp="1587269924951">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1086" y="187" key="#HTTP_Proxy/0.0.1920.1040@0.0.1920.1040" timestamp="1587269924951" />
+    <state x="539" y="200" width="720" height="608" key="#Notifications" timestamp="1587189615413">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="200" width="720" height="608" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1587189615413" />
+    <state x="686" y="387" key="#Project_Settings" timestamp="1587287012632">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="387" key="#Project_Settings/0.0.1920.1040@0.0.1920.1040" timestamp="1587287012632" />
+    <state x="457" y="86" key="CommitChangelistDialog2" timestamp="1587190137772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="457" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587190137772" />
+    <state x="735" y="265" key="FileChooserDialogImpl" timestamp="1587285919026">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="735" y="265" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587285919026" />
+    <state width="1877" height="644" key="GridCell.Tab.0.bottom" timestamp="1587308562123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="644" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587308562123" />
+    <state width="1877" height="644" key="GridCell.Tab.0.center" timestamp="1587308562123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="644" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587308562123" />
+    <state width="1877" height="644" key="GridCell.Tab.0.left" timestamp="1587308562123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="644" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587308562123" />
+    <state width="1877" height="644" key="GridCell.Tab.0.right" timestamp="1587308562123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="644" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587308562123" />
+    <state width="1877" height="644" key="GridCell.Tab.1.bottom" timestamp="1587308562124">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="644" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587308562124" />
+    <state width="1877" height="644" key="GridCell.Tab.1.center" timestamp="1587308562124">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="644" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587308562124" />
+    <state width="1877" height="644" key="GridCell.Tab.1.left" timestamp="1587308562123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="644" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587308562123" />
+    <state width="1877" height="644" key="GridCell.Tab.1.right" timestamp="1587308562124">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="644" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587308562124" />
+    <state x="540" y="254" key="IDE.errors.dialog" timestamp="1587295369120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="254" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587295369120" />
+    <state x="456" y="106" width="1299" height="774" key="SettingsEditor" timestamp="1587302559368">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="456" y="106" width="1299" height="774" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587302559368" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587190145366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587190145366" />
+    <state x="716" y="364" key="cloudConfig.PluginsDialog" timestamp="1587189625580">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="716" y="364" key="cloudConfig.PluginsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587189625580" />
+    <state x="823" y="364" key="cloudConfig.SelfSettingsDialog" timestamp="1587189606319">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="823" y="364" key="cloudConfig.SelfSettingsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587189606319" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/shop_online$Application.ic" NAME="Application Coverage Results" MODIFIED="1587290201047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.leiming.*</FILTER>
+    </SUITE>
+  </component>
+</project>

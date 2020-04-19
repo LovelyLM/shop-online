@@ -1,0 +1,15 @@
+2020-04-18 22:04:03 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-18 22:04:03 INFO  DispatcherServlet:547 - Completed initialization in 6 ms
+2020-04-18 22:04:03 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.addNewUserAddress ====
+2020-04-18 22:04:03 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-18 22:04:03 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-18 22:04:03 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：237 毫秒 ====
+2020-04-18 22:04:04 WARN  DefaultHandlerExceptionResolver:199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-04-18 22:04:15 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-18 22:04:15 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：9 毫秒 ====
+2020-04-18 22:04:22 WARN  DefaultHandlerExceptionResolver:199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-04-18 22:04:42 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-18 22:04:42 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-18 22:04:48 WARN  DefaultHandlerExceptionResolver:199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-04-18 22:04:52 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-18 22:04:52 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====

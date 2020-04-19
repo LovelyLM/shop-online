@@ -1,0 +1,20 @@
+2020-04-06 23:04:05 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-06 23:04:05 INFO  DispatcherServlet:547 - Completed initialization in 9 ms
+2020-04-06 23:04:05 INFO  ServiceLogAspect:29 - ==== 开始执行:class ItemServiceImpl.queryItemById ====
+2020-04-06 23:04:05 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-06 23:04:05 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-06 23:04:05 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：241 毫秒 ====
+2020-04-06 23:04:05 INFO  ServiceLogAspect:29 - ==== 开始执行:class ItemServiceImpl.queryItemList ====
+2020-04-06 23:04:06 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：47 毫秒 ====
+2020-04-06 23:04:06 INFO  ServiceLogAspect:29 - ==== 开始执行:class ItemServiceImpl.queryItemParam ====
+2020-04-06 23:04:06 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-06 23:04:06 INFO  ServiceLogAspect:29 - ==== 开始执行:class ItemServiceImpl.queryItemSpecList ====
+2020-04-06 23:04:06 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：7 毫秒 ====
+2020-04-06 23:04:19 INFO  ServiceLogAspect:29 - ==== 开始执行:class ItemServiceImpl.queryItemById ====
+2020-04-06 23:04:19 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-06 23:04:19 INFO  ServiceLogAspect:29 - ==== 开始执行:class ItemServiceImpl.queryItemList ====
+2020-04-06 23:04:19 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-06 23:04:19 INFO  ServiceLogAspect:29 - ==== 开始执行:class ItemServiceImpl.queryItemParam ====
+2020-04-06 23:04:19 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-06 23:04:19 INFO  ServiceLogAspect:29 - ==== 开始执行:class ItemServiceImpl.queryItemSpecList ====
+2020-04-06 23:04:19 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：3 毫秒 ====

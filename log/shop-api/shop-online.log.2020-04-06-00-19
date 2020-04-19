@@ -1,0 +1,6 @@
+2020-04-06 00:19:03 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-06 00:19:03 INFO  DispatcherServlet:547 - Completed initialization in 8 ms
+2020-04-06 00:19:20 INFO  ServiceLogAspect:29 - ==== 开始执行:class CatsServiceImpl.queryAllCats ====
+2020-04-06 00:19:20 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-06 00:19:20 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-06 00:19:20 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：253 毫秒 ====

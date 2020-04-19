@@ -1,8 +1,14 @@
 package com.leiming.pojo;
 
+import lombok.Builder;
+
 import javax.persistence.*;
 import java.util.Date;
 
+/**
+ * @author Leiming
+ */
+@Builder
 @Table(name = "order_status")
 public class OrderStatus {
     /**

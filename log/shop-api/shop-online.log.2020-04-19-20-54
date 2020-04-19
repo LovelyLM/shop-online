@@ -1,0 +1,19 @@
+2020-04-19 20:54:04 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-19 20:54:04 INFO  DispatcherServlet:547 - Completed initialization in 7 ms
+2020-04-19 20:54:04 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-19 20:54:04 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-19 20:54:04 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-19 20:54:04 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-19 20:54:04 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-19 20:54:04 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-19 20:54:05 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：295 毫秒 ====
+2020-04-19 20:54:05 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：295 毫秒 ====
+2020-04-19 20:54:05 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：296 毫秒 ====
+2020-04-19 20:54:05 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：295 毫秒 ====
+2020-04-19 20:54:05 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemsBySpecIds ====
+2020-04-19 20:54:05 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：29 毫秒 ====
+2020-04-19 20:54:07 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemsBySpecIds ====
+2020-04-19 20:54:07 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-19 20:54:16 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-19 20:54:16 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：21 毫秒 ====
+2020-04-19 20:54:18 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.updateUserAddressToBeDefault ====

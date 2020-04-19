@@ -1,0 +1,4 @@
+2020-04-17 11:13:40 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-17 11:13:40 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：29 毫秒 ====
+2020-04-17 11:13:54 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-17 11:13:54 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====

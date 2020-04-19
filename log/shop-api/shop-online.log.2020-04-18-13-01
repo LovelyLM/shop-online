@@ -1,0 +1,22 @@
+2020-04-18 13:01:38 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-18 13:01:38 INFO  DispatcherServlet:547 - Completed initialization in 13 ms
+2020-04-18 13:01:38 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItemsByThirdCat ====
+2020-04-18 13:01:38 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-18 13:01:38 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-18 13:01:38 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：309 毫秒 ====
+2020-04-18 13:01:47 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-18 13:01:47 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：13 毫秒 ====
+2020-04-18 13:01:49 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.searchItemsByThirdCat ====
+2020-04-18 13:01:49 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：13 毫秒 ====
+2020-04-18 13:01:51 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemById ====
+2020-04-18 13:01:51 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryCommentCount ====
+2020-04-18 13:01:51 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryPagedComments ====
+2020-04-18 13:01:51 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：15 毫秒 ====
+2020-04-18 13:01:51 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemList ====
+2020-04-18 13:01:51 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：17 毫秒 ====
+2020-04-18 13:01:51 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：24 毫秒 ====
+2020-04-18 13:01:51 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：47 毫秒 ====
+2020-04-18 13:01:51 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemParam ====
+2020-04-18 13:01:51 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：9 毫秒 ====
+2020-04-18 13:01:51 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemSpecList ====
+2020-04-18 13:01:51 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：8 毫秒 ====

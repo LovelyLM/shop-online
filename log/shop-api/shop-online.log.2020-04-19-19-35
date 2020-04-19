@@ -1,0 +1,37 @@
+2020-04-19 19:35:01 INFO  OrdersController:33 - 订单信息：{
+    "payMethod": 2,
+    "leftMsg": "",
+    "userId": "200418BBSXWZC568",
+    "itemSpecIds": "cake-1006-spec-1,cookies-65-spec-1",
+    "addressId": "200418GRX5445XWH"
+}
+2020-04-19 19:35:18 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.querySubCatList ====
+2020-04-19 19:35:18 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：10 毫秒 ====
+2020-04-19 19:35:19 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.queryAllCats ====
+2020-04-19 19:35:19 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CarouselService.queryAll ====
+2020-04-19 19:35:19 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-19 19:35:19 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：21 毫秒 ====
+2020-04-19 19:35:19 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-19 19:35:19 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：7 毫秒 ====
+2020-04-19 19:35:19 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-19 19:35:19 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：10 毫秒 ====
+2020-04-19 19:35:22 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.ItemService.queryItemsBySpecIds ====
+2020-04-19 19:35:22 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-19 19:35:25 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-19 19:35:25 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-19 19:35:29 INFO  OrdersController:33 - 订单信息：{
+    "payMethod": 1,
+    "leftMsg": "",
+    "userId": "200418BBSXWZC568",
+    "itemSpecIds": "cake-1006-spec-1,cookies-65-spec-1",
+    "addressId": "200418GRX5445XWH"
+}
+2020-04-19 19:35:39 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-19 19:35:39 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-19 19:35:47 INFO  OrdersController:33 - 订单信息：{
+    "payMethod": 1,
+    "leftMsg": "",
+    "userId": "200418BBSXWZC568",
+    "itemSpecIds": "cake-1006-spec-1,cookies-65-spec-1",
+    "addressId": "200418GRX5445XWH"
+}

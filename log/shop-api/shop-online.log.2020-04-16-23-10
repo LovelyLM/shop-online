@@ -1,0 +1,5 @@
+2020-04-16 23:10:50 INFO  ServiceLogAspect:29 - ==== 开始执行:class UserServiceImpl.queryUserForLogin ====
+2020-04-16 23:10:50 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：66 毫秒 ====
+2020-04-16 23:10:56 INFO  ServiceLogAspect:29 - ==== 开始执行:class UserServiceImpl.queryUserForLogin ====
+2020-04-16 23:10:56 INFO  ServiceLogAspect:48 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-16 23:10:58 WARN  DefaultHandlerExceptionResolver:199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]

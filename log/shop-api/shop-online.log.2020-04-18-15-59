@@ -1,0 +1,8 @@
+2020-04-18 15:59:11 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.UserService.queryUserForLogin ====
+2020-04-18 15:59:11 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：52 毫秒 ====
+2020-04-18 15:59:14 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.UserService.queryUserForLogin ====
+2020-04-18 15:59:14 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-18 15:59:19 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.UserService.queryUserForLogin ====
+2020-04-18 15:59:19 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-18 15:59:24 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.UserService.queryUserForLogin ====
+2020-04-18 15:59:24 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：2 毫秒 ====

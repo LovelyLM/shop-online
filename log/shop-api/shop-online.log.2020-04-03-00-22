@@ -1,0 +1,60 @@
+2020-04-03 00:20:35 INFO  Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-03 00:20:36 INFO  Application:55 - Starting Application on LovelyLM with PID 8 (D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online\shop-api\target\classes started by Leiming in D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online)
+2020-04-03 00:20:36 INFO  Application:651 - No active profile set, falling back to default profiles: default
+2020-04-03 00:20:38 INFO  TomcatWebServer:92 - Tomcat initialized with port(s): 8088 (http)
+2020-04-03 00:20:38 INFO  ContextLoader:284 - Root WebApplicationContext: initialization completed in 1840 ms
+2020-04-03 00:20:39 INFO  ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-03 00:20:39 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-04-03 00:20:39 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-04-03 00:20:39 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-04-03 00:20:39 INFO  MapperCacheDisabler:83 - Clear EntityHelper entityTableMap cache.
+2020-04-03 00:20:39 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2020-04-03 00:20:39 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2020-04-03 00:20:39 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2020-04-03 00:20:40 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2020-04-03 00:20:40 INFO  Application:61 - Started Application in 4.231 seconds (JVM running for 5.009)
+2020-04-03 00:20:55 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-03 00:20:55 INFO  DispatcherServlet:547 - Completed initialization in 5 ms
+2020-04-03 00:20:56 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-03 00:20:56 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-03 00:22:28 INFO  SpringBootTestContextBootstrapper:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.test.TransTest], using SpringBootContextLoader
+2020-04-03 00:22:28 INFO  AbstractContextLoader:264 - Could not detect default resource locations for test class [com.test.TransTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-03 00:22:28 INFO  SpringBootTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-03 00:22:28 INFO  SpringBootTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@37f1104d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@55740540, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@60015ef5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2f54a33d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1018bde2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@65b3f4a4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@f2ff811, org.springframework.test.context.event.EventPublishingTestExecutionListener@568ff82, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@50caa560, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2a266d09, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5ab9e72c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@186f8716, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1d8bd0de]
+2020-04-03 00:22:28 INFO  SpringBootTestContextBootstrapper:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.test.TransTest], using SpringBootContextLoader
+2020-04-03 00:22:28 INFO  AbstractContextLoader:264 - Could not detect default resource locations for test class [com.test.TransTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-03 00:22:28 INFO  SpringBootTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-03 00:22:28 INFO  SpringBootTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6631f5ca, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5ace1ed4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1613674b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@27ff5d15, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4e096385, org.springframework.test.context.transaction.TransactionalTestExecutionListener@649bec2e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@693fe6c9, org.springframework.test.context.event.EventPublishingTestExecutionListener@34f5090e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@31e5415e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@a2431d0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1cbb87f3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1a4013, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1b6e1eff]
+2020-04-03 00:22:28 INFO  Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-03 00:22:29 INFO  TransTest:55 - Starting TransTest on LovelyLM with PID 13156 (started by Leiming in D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online\shop-api)
+2020-04-03 00:22:29 INFO  TransTest:651 - No active profile set, falling back to default profiles: default
+2020-04-03 00:22:33 INFO  ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-03 00:22:34 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-04-03 00:22:34 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-04-03 00:22:34 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-04-03 00:22:34 INFO  MapperCacheDisabler:83 - Clear EntityHelper entityTableMap cache.
+2020-04-03 00:22:34 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2020-04-03 00:22:34 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2020-04-03 00:22:34 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2020-04-03 00:22:34 INFO  TransTest:61 - Started TransTest in 5.63 seconds (JVM running for 7.332)
+2020-04-03 00:22:34 INFO  TransTest:23 - ds
+2020-04-03 00:22:34 INFO  ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-03 00:22:42 INFO  Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-03 00:22:42 INFO  Application:55 - Starting Application on LovelyLM with PID 14172 (D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online\shop-api\target\classes started by Leiming in D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online)
+2020-04-03 00:22:42 INFO  Application:651 - No active profile set, falling back to default profiles: default
+2020-04-03 00:22:44 INFO  TomcatWebServer:92 - Tomcat initialized with port(s): 8088 (http)
+2020-04-03 00:22:44 INFO  ContextLoader:284 - Root WebApplicationContext: initialization completed in 1744 ms
+2020-04-03 00:22:46 INFO  ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-03 00:22:46 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-04-03 00:22:46 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-04-03 00:22:46 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-04-03 00:22:46 INFO  MapperCacheDisabler:83 - Clear EntityHelper entityTableMap cache.
+2020-04-03 00:22:46 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2020-04-03 00:22:46 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2020-04-03 00:22:46 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2020-04-03 00:22:46 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2020-04-03 00:22:46 INFO  Application:61 - Started Application in 4.066 seconds (JVM running for 4.895)
+2020-04-03 00:22:57 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-03 00:22:57 INFO  DispatcherServlet:547 - Completed initialization in 6 ms
+2020-04-03 00:22:58 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-03 00:22:58 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.

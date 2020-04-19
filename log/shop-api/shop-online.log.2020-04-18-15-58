@@ -1,0 +1,10 @@
+2020-04-18 15:58:58 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-18 15:58:58 INFO  DispatcherServlet:547 - Completed initialization in 9 ms
+2020-04-18 15:58:58 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CarouselService.queryAll ====
+2020-04-18 15:58:58 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.queryAllCats ====
+2020-04-18 15:58:58 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-18 15:58:58 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-18 15:58:59 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：525 毫秒 ====
+2020-04-18 15:58:59 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：526 毫秒 ====
+2020-04-18 15:58:59 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-18 15:58:59 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：44 毫秒 ====
