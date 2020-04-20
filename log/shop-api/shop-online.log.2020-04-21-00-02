@@ -1,0 +1,5 @@
+2020-04-21 00:02:33 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.center.CenterUserService.queryUserInfo ====
+2020-04-21 00:02:33 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-21 00:02:33 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-21 00:02:33 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：226 毫秒 ====
+2020-04-21 00:02:41 WARN  DefaultHandlerExceptionResolver:199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]

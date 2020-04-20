@@ -1,0 +1,65 @@
+2020-04-20 22:08:04 INFO  Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-20 22:08:05 INFO  Application:55 - Starting Application on LovelyLM with PID 848 (D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online\shop-api\target\classes started by Leiming in D:\LovelyLM\myCodeStudy\Java\IntelliJProject\shop-online)
+2020-04-20 22:08:05 INFO  Application:651 - No active profile set, falling back to default profiles: default
+2020-04-20 22:08:06 INFO  TomcatWebServer:92 - Tomcat initialized with port(s): 8088 (http)
+2020-04-20 22:08:07 INFO  ContextLoader:284 - Root WebApplicationContext: initialization completed in 1854 ms
+2020-04-20 22:08:08 INFO  ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-20 22:08:08 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-04-20 22:08:08 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-04-20 22:08:08 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-04-20 22:08:08 INFO  MapperCacheDisabler:83 - Clear EntityHelper entityTableMap cache.
+2020-04-20 22:08:08 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2020-04-20 22:08:08 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2020-04-20 22:08:08 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2020-04-20 22:08:09 INFO  CachingOperationNameGenerator:40 - Generating unique operation named: searchUsingGET_1
+2020-04-20 22:08:09 INFO  CachingOperationNameGenerator:40 - Generating unique operation named: subCatUsingGET_1
+2020-04-20 22:08:09 INFO  CachingOperationNameGenerator:40 - Generating unique operation named: listUsingPOST_1
+2020-04-20 22:08:09 INFO  CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_1
+2020-04-20 22:08:09 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2020-04-20 22:08:09 INFO  Application:61 - Started Application in 4.485 seconds (JVM running for 5.67)
+2020-04-20 22:08:18 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-20 22:08:18 INFO  DispatcherServlet:547 - Completed initialization in 9 ms
+2020-04-20 22:08:18 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CarouselService.queryAll ====
+2020-04-20 22:08:18 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.queryAllCats ====
+2020-04-20 22:08:18 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-20 22:08:18 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-20 22:08:18 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：230 毫秒 ====
+2020-04-20 22:08:18 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：232 毫秒 ====
+2020-04-20 22:08:18 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-20 22:08:18 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：10 毫秒 ====
+2020-04-20 22:08:25 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.UserService.queryUserForLogin ====
+2020-04-20 22:08:25 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：15 毫秒 ====
+2020-04-20 22:08:25 INFO  CookieUtils:211 - ========== domainName: localhost ==========
+2020-04-20 22:08:26 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.queryAllCats ====
+2020-04-20 22:08:26 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CarouselService.queryAll ====
+2020-04-20 22:08:26 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：7 毫秒 ====
+2020-04-20 22:08:26 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：9 毫秒 ====
+2020-04-20 22:08:26 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-20 22:08:26 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：7 毫秒 ====
+2020-04-20 22:08:27 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-20 22:08:27 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：12 毫秒 ====
+2020-04-20 22:08:27 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-20 22:08:27 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：10 毫秒 ====
+2020-04-20 22:08:28 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-20 22:08:28 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-20 22:08:28 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-20 22:08:28 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：9 毫秒 ====
+2020-04-20 22:08:28 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-20 22:08:28 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-20 22:08:29 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-20 22:08:29 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-20 22:08:29 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-20 22:08:29 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-20 22:08:29 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-20 22:08:29 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：2 毫秒 ====
+2020-04-20 22:08:30 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-20 22:08:30 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：8 毫秒 ====
+2020-04-20 22:08:49 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.UserService.queryUserForLogin ====
+2020-04-20 22:08:49 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-20 22:08:49 INFO  CookieUtils:211 - ========== domainName: localhost ==========
+2020-04-20 22:08:49 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CarouselService.queryAll ====
+2020-04-20 22:08:49 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.queryAllCats ====
+2020-04-20 22:08:49 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-20 22:08:49 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-20 22:08:49 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-20 22:08:49 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====

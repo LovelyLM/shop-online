@@ -1,0 +1,4 @@
+2020-04-20 22:51:21 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.AddressService.queryAll ====
+2020-04-20 22:51:21 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：18 毫秒 ====
+2020-04-20 22:51:30 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.center.CenterUserService.queryUserInfo ====
+2020-04-20 22:51:30 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：8 毫秒 ====

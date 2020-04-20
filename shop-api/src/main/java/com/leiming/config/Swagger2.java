@@ -14,6 +14,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * Create by LovelyLM
  * 2020/4/1 0:26
  * V 1.0
+ * @author Leiming
+ * api文档框架
  */
 
 @Configuration

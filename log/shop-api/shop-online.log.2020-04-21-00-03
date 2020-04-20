@@ -1,0 +1,1 @@
+2020-04-21 00:03:09 WARN  DefaultHandlerExceptionResolver:199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]

@@ -78,18 +78,12 @@ public class PassportController {
                 StringUtils.isBlank(password)){
             return JsonResult.errorMsg("用户名或密码不能为空");
         }
-
         Users user = userService.queryUserForLogin(userBo);
         if (user == null) {
             return JsonResult.errorMsg("用户名或密码错误");
-
         }
-
-
         String userJson = JSONUtil.toJsonStr(user);
-
         CookieUtils.setCookie(request, response, "user", userJson, true);
-
         return JsonResult.ok(user);
 
     }

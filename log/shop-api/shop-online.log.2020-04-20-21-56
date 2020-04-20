@@ -1,0 +1,4 @@
+2020-04-20 21:56:18 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CarouselService.queryAll ====
+2020-04-20 21:56:18 INFO  HikariDataSource:110 - DateSourceHikaruCP - Starting...
+2020-04-20 21:56:19 INFO  HikariDataSource:123 - DateSourceHikaruCP - Start completed.
+2020-04-20 21:56:19 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：352 毫秒 ====

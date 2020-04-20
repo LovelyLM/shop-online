@@ -1,0 +1,4 @@
+2020-04-21 00:04:06 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.center.CenterUserService.queryUserInfo ====
+2020-04-21 00:04:06 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-21 00:04:58 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.center.CenterUserService.queryUserInfo ====
+2020-04-21 00:04:58 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====

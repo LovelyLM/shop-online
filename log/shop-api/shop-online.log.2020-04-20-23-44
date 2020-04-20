@@ -1,0 +1,3 @@
+2020-04-20 23:44:13 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-20 23:44:13 INFO  DispatcherServlet:547 - Completed initialization in 11 ms
+2020-04-20 23:44:49 WARN  DefaultHandlerExceptionResolver:199 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userId' is not present]

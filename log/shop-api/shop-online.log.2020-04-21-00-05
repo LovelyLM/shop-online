@@ -1,0 +1,17 @@
+2020-04-21 00:05:00 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.center.CenterUserService.updateUserInfo ====
+2020-04-21 00:05:00 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：53 毫秒 ====
+2020-04-21 00:05:00 INFO  CookieUtils:211 - ========== domainName: localhost ==========
+2020-04-21 00:05:03 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.center.CenterUserService.queryUserInfo ====
+2020-04-21 00:05:03 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：2 毫秒 ====
+2020-04-21 00:05:08 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.center.CenterUserService.updateUserInfo ====
+2020-04-21 00:05:08 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====
+2020-04-21 00:05:08 INFO  CookieUtils:211 - ========== domainName: localhost ==========
+2020-04-21 00:05:10 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.center.CenterUserService.queryUserInfo ====
+2020-04-21 00:05:10 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-21 00:05:42 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.center.CenterUserService.updateUserInfo ====
+2020-04-21 00:05:42 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：7 毫秒 ====
+2020-04-21 00:05:42 INFO  CookieUtils:211 - ========== domainName: localhost ==========
+2020-04-21 00:05:46 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.center.CenterUserService.queryUserInfo ====
+2020-04-21 00:05:46 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：3 毫秒 ====
+2020-04-21 00:05:49 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.center.CenterUserService.queryUserInfo ====
+2020-04-21 00:05:49 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====

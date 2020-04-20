@@ -1,0 +1,9 @@
+2020-04-20 22:10:09 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.UserService.queryUserForLogin ====
+2020-04-20 22:10:09 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：5 毫秒 ====
+2020-04-20 22:10:09 INFO  CookieUtils:211 - ========== domainName: localhost ==========
+2020-04-20 22:10:09 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CarouselService.queryAll ====
+2020-04-20 22:10:09 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.queryAllCats ====
+2020-04-20 22:10:09 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-20 22:10:09 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：4 毫秒 ====
+2020-04-20 22:10:09 INFO  ServiceLogAspect:27 - ==== 开始执行:class com.leiming.service.CategoryService.getSixNewItemsLazy ====
+2020-04-20 22:10:09 INFO  ServiceLogAspect:46 - ==== 执行结束，耗时：6 毫秒 ====

@@ -10,6 +10,8 @@ import org.springframework.web.filter.CorsFilter;
  * Create by LovelyLM
  * 2020/4/1 23:04
  * V 1.0
+ * @author Leiming
+ * 设置跨域
  */
 
 @Configuration
@@ -17,7 +19,6 @@ public class CorsConfig {
     public CorsConfig (){
 
     }
-
     @Bean
     public CorsFilter corsFilter (){
         CorsConfiguration corsConfiguration = new CorsConfiguration();
