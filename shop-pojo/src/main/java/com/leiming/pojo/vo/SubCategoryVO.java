@@ -1,7 +1,9 @@
 package com.leiming.pojo.vo;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * Create by LovelyLM
@@ -9,11 +11,13 @@ import lombok.Setter;
  * V 1.0
  * 二级分类一下所有分类，及三级分类
  */
-@Getter
-@Setter
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 class SubCategoryVO {
     private Integer subId;
-    private String SubName;
+    private String subName;
     private String subType;
     private String subFatherId;
 }

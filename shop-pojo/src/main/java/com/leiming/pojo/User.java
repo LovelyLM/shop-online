@@ -1,18 +1,20 @@
 package com.leiming.pojo;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Id;
 import java.util.Date;
 /**
  * @author Leiming
  */
 @Getter
 @Setter
-public class Users {
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class User {
     /**
      * 主键id 用户id
      */
@@ -27,6 +29,7 @@ public class Users {
     /**
      * 密码 密码
      */
+    @JsonIgnore
     private String password;
 
     /**
@@ -68,11 +71,13 @@ public class Users {
      * 创建时间 创建时间
      */
     @Column(name = "created_time")
+    @JsonIgnore
     private Date createdTime;
 
     /**
      * 更新时间 更新时间
      */
     @Column(name = "updated_time")
+    @JsonIgnore
     private Date updatedTime;
 }

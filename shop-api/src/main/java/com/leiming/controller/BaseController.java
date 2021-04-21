@@ -3,9 +3,9 @@ package com.leiming.controller;
 import org.springframework.stereotype.Controller;
 
 /**
- * Create by LovelyLM
  * 2020/4/17 17:05
  * V 1.0
+ * @author LeiMing
  */
 @Controller
 public class BaseController {

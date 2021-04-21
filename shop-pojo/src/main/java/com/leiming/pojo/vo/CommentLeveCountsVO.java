@@ -1,16 +1,16 @@
 package com.leiming.pojo.vo;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.ToString;
 
 /**
- * Create by LovelyLM
  * 2020/4/7 22:10
  * V 1.0
  * 用于展示商品评价数的vo
+ * @author LeiMing
  */
-@Getter
-@Setter
+@Data
+@ToString
 public class CommentLeveCountsVO {
 
     private Integer totalCounts;

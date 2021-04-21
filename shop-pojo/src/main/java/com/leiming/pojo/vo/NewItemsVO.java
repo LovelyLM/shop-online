@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * 最新商品VO
+ * @author LeiMing
  */
 @Getter
 @Setter

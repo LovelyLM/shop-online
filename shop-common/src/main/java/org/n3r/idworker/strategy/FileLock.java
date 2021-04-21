@@ -14,6 +14,7 @@ import java.nio.channels.OverlappingFileLockException;
  * A file lock a la flock/funlock
  * <p/>
  * The given path will be created and opened if it doesn't exist.
+ * @author LeiMing
  */
 public class FileLock {
     private final File file;
@@ -90,7 +91,9 @@ public class FileLock {
     public void destroy() {
         synchronized (this) {
             unlock();
-            if (!channel.isOpen()) return;
+            if (!channel.isOpen()) {
+                return;
+            }
 
             try {
                 channel.close();
@@ -117,7 +120,9 @@ public class FileLock {
 
 
     public synchronized boolean writeObject(Object object) {
-        if (!channel.isOpen()) return false;
+        if (!channel.isOpen()) {
+            return false;
+        }
 
         try {
             channel.position(0);

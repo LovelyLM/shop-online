@@ -6,11 +6,11 @@ import com.leiming.mapper.UserAddressMapper;
 import com.leiming.pojo.UserAddress;
 import com.leiming.pojo.bo.AddressBO;
 import org.n3r.idworker.Sid;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.util.Date;
 import java.util.List;
 
@@ -19,9 +19,9 @@ import java.util.List;
  */
 @Service
 public class AddressService {
-    @Autowired
+    @Resource
     private UserAddressMapper userAddressMapper;
-    @Autowired
+    @Resource
     private Sid sid;
     /**
      * 根据用户id查询用户所有地址
@@ -61,6 +61,7 @@ public class AddressService {
      */
     @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     public void updateUserAddressToBeDefault(String userId, String addressId){
+        //构建已经是默认的地址查询条件
         UserAddress userAddress = UserAddress.builder()
                 .userId(userId)
                 .isDefault(YesOrNo.YSE.type)
@@ -71,6 +72,7 @@ public class AddressService {
             ua.setIsDefault(YesOrNo.NO.type);
             userAddressMapper.updateByPrimaryKey(ua);
         }
+        //将传入的地址id设置为默认
         UserAddress defaultAddress = UserAddress.builder()
                 .id(addressId)
                 .userId(userId)
@@ -87,4 +89,25 @@ public class AddressService {
         return userAddressMapper.selectByPrimaryKey(addressId);
     }
 
+    /**
+     * 修改地址
+     * @param addressBO 地址类bo
+     */
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
+    public void updateUserAddress(AddressBO addressBO){
+        UserAddress userAddress = new UserAddress();
+        BeanUtil.copyProperties(addressBO, userAddress);
+        userAddress.setId(addressBO.getAddressId());
+        userAddressMapper.updateByPrimaryKeySelective(userAddress);
+    }
+
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
+    public void deleteUserAddress(String userId, String addressId){
+        UserAddress userAddress = new UserAddress();
+        userAddress.setUserId(userId);
+        userAddress.setId(addressId);
+        userAddressMapper.delete(userAddress);
+
+
+    }
 }

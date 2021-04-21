@@ -5,6 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import tk.mybatis.spring.annotation.MapperScan;
 
+/**
+ * @author LovelyLM
+ */
 @SpringBootApplication
 @MapperScan(basePackages = "com.leiming.mapper")
 @ComponentScan(basePackages = {"com.leiming", "org.n3r.idworker"})

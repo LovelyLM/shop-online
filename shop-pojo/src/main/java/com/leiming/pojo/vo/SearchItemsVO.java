@@ -4,17 +4,17 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * Create by LovelyLM
  * 2020/4/18 1:39
  * V 1.0
  * 搜索结果vo
+ * @author LeiMing
  */
 @Getter
 @Setter
 public class SearchItemsVO {
     private String itemId;
     private String itemName;
-    private int sellCounts;
+    private Integer sellCounts;
     private String imgUrl;
-    private int price;
+    private Integer price;
 }

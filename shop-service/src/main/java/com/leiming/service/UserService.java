@@ -2,16 +2,17 @@ package com.leiming.service;
 
 import com.leiming.enums.Sex;
 import com.leiming.mapper.UsersMapper;
-import com.leiming.pojo.Users;
+import com.leiming.pojo.User;
 import com.leiming.pojo.bo.UserBo;
 import com.leiming.utils.DateUtil;
 import com.leiming.utils.MD5Utils;
 import org.n3r.idworker.Sid;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
+
+import javax.annotation.Resource;
 import java.util.Date;
 
 
@@ -20,9 +21,9 @@ import java.util.Date;
  */
 @Service
 public class UserService {
-    @Autowired
+    @Resource
     private UsersMapper usersMapper;
-    @Autowired
+    @Resource
     private Sid sid;
     private static final String USER_FACE = "https://s1.ax1x.com/2020/03/31/GlMvMq.jpg";
     private static final String USER_BIRTHDAY = "1970-01-01";
@@ -35,11 +36,12 @@ public class UserService {
     @Transactional(propagation = Propagation.NOT_SUPPORTED)
     public boolean queryUsernameIsExit(String username) {
 
-        Example userExample = new Example(Users.class);
+        //构造查询条件，与mybatis-plus类似
+        Example userExample = new Example(User.class);
         Example.Criteria criteria = userExample.createCriteria();
         criteria.andEqualTo("username", username);
-
-        Users user = usersMapper.selectOneByExample(userExample);
+        //根据用户名查询用户
+        User user = usersMapper.selectOneByExample(userExample);
         return user != null;
     }
 
@@ -49,9 +51,9 @@ public class UserService {
      * @return 用户model对象
      */
     @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
-    public Users createUser(UserBo userBo) {
+    public User createUser(UserBo userBo) {
 
-        Users user = new Users();
+        User user = new User();
         user.setUsername(userBo.getUsername());
         try {
             user.setPassword(MD5Utils.getMD5Str(userBo.getPassword()));
@@ -83,10 +85,12 @@ public class UserService {
      * @return Users 用户model对象
      */
     @Transactional(propagation = Propagation.NOT_SUPPORTED)
-    public Users queryUserForLogin(UserBo userBo) {
-        Example userExample = new Example(Users.class);
+    public User queryUserForLogin(UserBo userBo) {
+        //创造查询条件，根据用户名查询用户是否存在
+        Example userExample = new Example(User.class);
         Example.Criteria criteria = userExample.createCriteria();
         criteria.andEqualTo("username", userBo.getUsername());
+        //判断加密的密码是否相同
         try {
             criteria.andEqualTo("password", MD5Utils.getMD5Str(userBo.getPassword()));
         } catch (Exception e) {

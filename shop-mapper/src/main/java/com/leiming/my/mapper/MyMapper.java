@@ -29,6 +29,7 @@ import tk.mybatis.mapper.common.MySqlMapper;
 
 /**
  * 继承自己的MyMapper
+ * @author LeiMing
  */
 @org.apache.ibatis.annotations.Mapper
 public interface MyMapper<T> extends Mapper<T>, MySqlMapper<T> {

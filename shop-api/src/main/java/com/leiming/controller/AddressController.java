@@ -1,5 +1,6 @@
 package com.leiming.controller;
 
+import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
 import com.leiming.pojo.UserAddress;
 import com.leiming.pojo.bo.AddressBO;
@@ -9,16 +10,22 @@ import com.leiming.utils.MobileEmailUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
+/**
+ * @author LeiMing
+ */
 @Api(value = "地址相关", tags = {"地址相关api接口"})
 @RestController
 @RequestMapping("address")
+@Validated
 public class AddressController {
-    @Autowired
+    @Resource
     private AddressService addressService;
 
     @ApiOperation(value = "根据用户id查询收获地址", notes = "根据用户id查询收获地址", httpMethod = "POST")
@@ -45,11 +52,22 @@ public class AddressController {
     @ApiOperation(value = "修改用户地址", notes = "修改用户地址", httpMethod = "POST")
     @PostMapping("/update")
     public JsonResult update(@RequestBody AddressBO addressBO){
-        JsonResult checkAddress = checkAddress(addressBO);
-        if (checkAddress.getStatus() != 200){
-            return checkAddress;
+        if (ObjectUtil.isEmpty(addressBO.getAddressId())){
+            return JsonResult.errorMsg("地址id不能为空");
         }
-        addressService.addNewUserAddress(addressBO);
+        addressService.updateUserAddress(addressBO);
+        return JsonResult.ok();
+    }
+
+    /**
+     * 删除地址
+     * @param userId 用户id
+     * @param addressId 地址id
+     */
+    @PostMapping("/delete")
+    public JsonResult delete(@RequestParam @NotNull(message = "用户id不能为空") String userId,
+                             @RequestParam @NotNull(message = "地址id不能为空") String addressId){
+        addressService.deleteUserAddress(userId, addressId);
         return JsonResult.ok();
     }
 
@@ -67,8 +85,7 @@ public class AddressController {
 
     /**
      * 检验地址合法性
-     * @param addressBO
-     * @return
+     * @param addressBO 地址
      */
     private JsonResult checkAddress(AddressBO addressBO) {
         String receiver = addressBO.getReceiver();

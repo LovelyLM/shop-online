@@ -9,11 +9,11 @@ import com.leiming.mapper.OrdersMapper;
 import com.leiming.pojo.*;
 import com.leiming.pojo.bo.SubmitOrderBO;
 import org.n3r.idworker.Sid;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.util.Date;
 
 /**
@@ -22,20 +22,22 @@ import java.util.Date;
 @Service
 public class OrderService {
 
-    @Autowired
+    @Resource
     private OrdersMapper ordersMapper;
-    @Autowired
+    @Resource
     private AddressService addressService;
-    @Autowired
+    @Resource
     private ItemService itemService;
-    @Autowired
+    @Resource
     private Sid sid;
-    @Autowired
+    @Resource
     private OrderItemsMapper orderItemsMapper;
-    @Autowired
+    @Resource
     private OrderStatusMapper orderStatusMapper;
     @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
-    public void createOrder(SubmitOrderBO submitOrderBO){
+    public String createOrder(SubmitOrderBO submitOrderBO){
+
+
         String itemSpecIds = submitOrderBO.getItemSpecIds();
 
         Integer postAmount = 0;
@@ -44,8 +46,9 @@ public class OrderService {
 
         UserAddress userAddress = addressService.queryUserAddress(submitOrderBO.getAddressId());
 
+        //初始化订单相关信息
         Orders newOrder = Orders.builder()
-                .id(Sid.next())
+                .id(orderId)
                 .userId(submitOrderBO.getUserId())
                 .receiverName(userAddress.getReceiver())
                 .receiverMobile(userAddress.getMobile())
@@ -55,8 +58,7 @@ public class OrderService {
                 .isComment(YesOrNo.NO.type)
                 .leftMsg(submitOrderBO.getLeftMsg())
                 .isDelete(YesOrNo.NO.type)
-                .createdTime(new Date())
-                .updatedTime(new Date()).build();
+                .createdTime(new Date()).build();
         // 2. 循环根据itemSpecIds保存订单商品信息表
         String[] splitItemSpecIds = StrUtil.split(itemSpecIds, ",");
         int totalAmount = 0;
@@ -94,6 +96,7 @@ public class OrderService {
             itemService.decreaseItemSpecStock(itemSpecId, buyCounts);
         }
 
+        //设置付款金额信息
         newOrder.setTotalAmount(totalAmount);
         newOrder.setRealPayAmount(realPayAmount);
         ordersMapper.insert(newOrder);
@@ -103,6 +106,8 @@ public class OrderService {
                 .orderStatus(OrderStatusEnum.WAIT_APY.type)
                 .createdTime(new Date()).build();
         orderStatusMapper.insert(waitOrderStatus);
+
+        return orderId;
 
     }
 

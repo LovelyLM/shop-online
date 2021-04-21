@@ -4,15 +4,16 @@ import java.util.List;
 
 /**
  * 
+ * @author LeiMing
  * @Title: PagedGridResult.java
  * @Description: 用来返回分页Grid的数据格式
  */
 public class PagedGridResult {
 	
-	private int page;			// 当前页数
-	private int total;			// 总页数	
-	private long records;		// 总记录数
-	private List<?> rows;		// 每行显示的内容
+	private int page;
+	private int total;
+	private long records;
+	private List<?> rows;
 
 	public int getPage() {
 		return page;

@@ -13,13 +13,15 @@ import com.leiming.pojo.vo.SearchItemsVO;
 import com.leiming.pojo.vo.ShopcartVO;
 import com.leiming.utils.DesensitizationUtil;
 import com.leiming.utils.PagedGridResult;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
-import java.util.*;
+import javax.annotation.Resource;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Create by LovelyLM
@@ -29,22 +31,22 @@ import java.util.*;
  */
 @Service
 public class ItemService {
-    @Autowired
+    @Resource
     private ItemsMapper itemsMapper;
 
-    @Autowired
+    @Resource
     private ItemsImgMapper itemsImgMapper;
 
-    @Autowired
+    @Resource
     private ItemsParamMapper itemsParamMapper;
 
-    @Autowired
+    @Resource
     private ItemsSpecMapper itemsSpecMapper;
 
-    @Autowired
+    @Resource
     private ItemsCommentsMapper itemsCommentsMapper;
 
-    @Autowired
+    @Resource
     private ItemsMapperCustom itemsMapperCustom;
 
     /**
@@ -106,21 +108,16 @@ public class ItemService {
      * @param level 评论等级，中、好、差评
      * @return List<ItemCommentVO> 展示商品评论信息vo
      */
-    @Transactional(propagation = Propagation.SUPPORTS)
     public PagedGridResult queryPagedComments(String itemId, Integer level, Integer page, Integer pageSize) {
         Map<String ,Object> map = new HashMap<>();
         map.put("itemId", itemId);
         map.put("level", level);
-        /**
-         * 开始分页
-         */
         PageHelper.startPage(page, pageSize);
 
-        List<ItemCommentVO> itemCommentVOS = itemsMapperCustom.queryItemComments(map);
-        for (ItemCommentVO itemCommentVO:itemCommentVOS) {
-            itemCommentVO.setNickname(DesensitizationUtil.commonDisplay(itemCommentVO.getNickname()));
-        }
-        return setPageGrid(itemCommentVOS, page);
+        List<ItemCommentVO> itemCommentVos = itemsMapperCustom.queryItemComments(map);
+        //评论中用户信息脱敏
+        itemCommentVos.forEach(itemCommentVO -> itemCommentVO.setNickname(DesensitizationUtil.commonDisplay(itemCommentVO.getNickname())));
+        return setPageGrid(itemCommentVos, page);
     }
 
     /**
@@ -178,10 +175,10 @@ public class ItemService {
     /**
      * 根据商品名字查询商品（模糊查询）
      * @param keywords 搜索关键字
-     * @param sort
-     * @param page
-     * @param pageSize
-     * @return
+     * @param sort 排序
+     * @param page 页码
+     * @param pageSize 每页个数
+     * @return 返回值
      */
     @Transactional(propagation = Propagation.NOT_SUPPORTED)
     public PagedGridResult searchItems(String keywords, String sort, Integer page, Integer pageSize){
@@ -209,7 +206,7 @@ public class ItemService {
 
     /**
      *
-     * @param specIds
+     * @param specIds 商品specId
      * @return List
      */
     @Transactional(propagation = Propagation.SUPPORTS)
@@ -243,13 +240,13 @@ public class ItemService {
 
     /**
      * 减库存
-     * @param specId
-     * @param buyCounts
+     * @param specId 商品specId
+     * @param buyCounts 购买数量
      */
     public void decreaseItemSpecStock(String specId, int buyCounts) {
 
         int result = itemsMapperCustom.decreaseItemSpecStock(specId, buyCounts);
-        if (result != 1) {
+        if (result - buyCounts < 0) {
             throw new RuntimeException("订单创建失败，原因：库存不足!");
         }
     }

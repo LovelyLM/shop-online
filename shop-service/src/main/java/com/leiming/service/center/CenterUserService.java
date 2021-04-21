@@ -1,14 +1,15 @@
 package com.leiming.service.center;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.util.ObjectUtil;
 import com.leiming.mapper.UsersMapper;
-import com.leiming.pojo.Users;
+import com.leiming.pojo.User;
 import com.leiming.pojo.bo.center.CenterUserBO;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.util.Date;
 
 /**
@@ -18,32 +19,39 @@ import java.util.Date;
 @Service
 public class CenterUserService {
 
-    @Autowired
+    @Resource
     private UsersMapper usersMapper;
 
     /**
      * 根据用户id查询用户信息
-     * @param userId
-     * @return
+     * @param userId 用户id
+     * @return 返回值
      */
     @Transactional(propagation = Propagation.NOT_SUPPORTED)
-    public Users queryUserInfo(String userId){
-        Users user = usersMapper.selectByPrimaryKey(userId);
-        /**
-         * 将密码置空
-         */
+    public User queryUserInfo(String userId){
+        User user = usersMapper.selectByPrimaryKey(userId);
+        if(ObjectUtil.isEmpty(user)){
+            return null;
+        }
+
+        //将密码置空
         user.setPassword(null);
         return user;
     }
 
-    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
 
-    public Users updateUserInfo(String userId, CenterUserBO centerUserBO){
-        Users users = new Users();
-        users.setUpdatedTime(new Date());
-        users.setId(userId);
-        BeanUtil.copyProperties(centerUserBO, users);
-        usersMapper.updateByPrimaryKeySelective(users);
+    /**
+     * 修改用户信息
+     * @param userId 用户id
+     * @param centerUserBO 用户信息
+     */
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
+    public User updateUserInfo(String userId, CenterUserBO centerUserBO){
+        User user = new User();
+        user.setUpdatedTime(new Date());
+        user.setId(userId);
+        BeanUtil.copyProperties(centerUserBO, user);
+        usersMapper.updateByPrimaryKeySelective(user);
         return queryUserInfo(userId);
     }
 }

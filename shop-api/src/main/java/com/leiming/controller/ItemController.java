@@ -1,7 +1,10 @@
 package com.leiming.controller;
 
 import cn.hutool.core.util.StrUtil;
-import com.leiming.pojo.*;
+import com.leiming.pojo.Items;
+import com.leiming.pojo.ItemsImg;
+import com.leiming.pojo.ItemsParam;
+import com.leiming.pojo.ItemsSpec;
 import com.leiming.pojo.vo.CommentLeveCountsVO;
 import com.leiming.pojo.vo.ItemInfoVO;
 import com.leiming.service.ItemService;
@@ -11,9 +14,10 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -27,7 +31,7 @@ import java.util.List;
 @RequestMapping("items")
 @Api(value = "商品", tags = {"商品相关"})
 public class ItemController extends BaseController{
-    @Autowired
+    @Resource
     private ItemService itemService;
 
     @ApiOperation(value = "获取首页分类列表", notes = "获取首页分类列表", httpMethod = "GET")
@@ -38,12 +42,12 @@ public class ItemController extends BaseController{
         }
 
         Items item = itemService.queryItemById(itemId);
-        List<ItemsImg> itemsImgs = itemService.queryItemList(itemId);
+        List<ItemsImg> itemsImages = itemService.queryItemList(itemId);
         ItemsParam itemsParam = itemService.queryItemParam(itemId);
         List<ItemsSpec> itemsSpecs = itemService.queryItemSpecList(itemId);
         ItemInfoVO itemInfoVO = new ItemInfoVO();
         itemInfoVO.setItem(item);
-        itemInfoVO.setItemImgList(itemsImgs);
+        itemInfoVO.setItemImgList(itemsImages);
         itemInfoVO.setItemParams(itemsParam);
         itemInfoVO.setItemSpecList(itemsSpecs);
 
@@ -100,19 +104,11 @@ public class ItemController extends BaseController{
 
     @ApiOperation(value = "搜索商品列表（根据分类id）", notes = "搜索商品列表（根据分类id）", httpMethod = "GET")
     @GetMapping("/catItems")
-    public JsonResult search(@RequestParam Integer catId,
+    public JsonResult search(@RequestParam @NotNull(message = "分类id不能为空") Integer catId,
                              @RequestParam String sort,
-                             @RequestParam Integer page,
-                             @RequestParam Integer pageSize){
-        if (catId == null) {
-            return JsonResult.errorMsg("分类id不能为空");
-        }
-        if (page == null){
-            page = 1;
-        }
-        if (pageSize == null){
-            pageSize = PAGE_SIZE;
-        }
+                             @RequestParam(defaultValue = "1") Integer page,
+                             @RequestParam(defaultValue = "20") Integer pageSize){
+
         PagedGridResult pagedGridResult = itemService.searchItemsByThirdCat(catId, sort, page, pageSize);
         return JsonResult.ok(pagedGridResult);
     }
