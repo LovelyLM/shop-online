@@ -6,3 +6,8 @@
 /shop-service/target/
 
 /.idea/
+/shop-api/shop-api.iml
+/shop-common/shop-common.iml
+/shop-mapper/shop-mapper.iml
+/shop-pojo/shop-pojo.iml
+/shop-service/shop-service.iml
