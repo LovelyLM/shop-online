@@ -7,14 +7,19 @@ import com.leiming.mapper.OrderItemsMapper;
 import com.leiming.mapper.OrderStatusMapper;
 import com.leiming.mapper.OrdersMapper;
 import com.leiming.pojo.*;
+import com.leiming.pojo.bo.ShopcartBO;
 import com.leiming.pojo.bo.SubmitOrderBO;
 import org.n3r.idworker.Sid;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author Leiming
@@ -29,21 +34,25 @@ public class OrderService {
     @Resource
     private ItemService itemService;
     @Resource
+    private RedisTemplate redisTemplate;
+    @Resource
     private Sid sid;
     @Resource
     private OrderItemsMapper orderItemsMapper;
     @Resource
     private OrderStatusMapper orderStatusMapper;
     @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
-    public String createOrder(SubmitOrderBO submitOrderBO){
-
-
+    public String createOrder(SubmitOrderBO submitOrderBO,  List<ShopcartBO> shopCartBOList){
+        //获取id数组
         String itemSpecIds = submitOrderBO.getItemSpecIds();
 
+        //初始化金额
         Integer postAmount = 0;
 
+        //初始化订单id
         String orderId = sid.nextShort();
 
+        //查找用户地址
         UserAddress userAddress = addressService.queryUserAddress(submitOrderBO.getAddressId());
 
         //初始化订单相关信息
@@ -63,10 +72,16 @@ public class OrderService {
         String[] splitItemSpecIds = StrUtil.split(itemSpecIds, ",");
         int totalAmount = 0;
         int realPayAmount = 0;
+        List<ShopcartBO> tobeRemoveFromRedis = new ArrayList<>();
         for (String itemSpecId : splitItemSpecIds) {
+            int buyCounts = 0;
+            //商品购买的数量重新从redis的购物车中获取
+            List<ShopcartBO> list = shopCartBOList.stream().filter(shopCartBO -> shopCartBO.getSpecId().equals(itemSpecId)).collect(Collectors.toList());
+            if (list.size() == 1){
+                buyCounts =list.get(0).getBuyCounts();
+                tobeRemoveFromRedis.add(list.get(0));
+            }
 
-            // TODO 整合redis后，商品购买的数量重新从redis的购物车中获取
-            int buyCounts = 1;
 
             // 2.1 根据规格id，查询规格的具体信息，主要获取价格
             ItemsSpec itemSpec = itemService.queryItemSpecById(itemSpecId);
@@ -99,6 +114,9 @@ public class OrderService {
         //设置付款金额信息
         newOrder.setTotalAmount(totalAmount);
         newOrder.setRealPayAmount(realPayAmount);
+        //设置时间
+        newOrder.setUpdatedTime(new Date());
+        newOrder.setCreatedTime(new Date());
         ordersMapper.insert(newOrder);
 
         OrderStatus waitOrderStatus = OrderStatus.builder()
@@ -106,7 +124,8 @@ public class OrderService {
                 .orderStatus(OrderStatusEnum.WAIT_APY.type)
                 .createdTime(new Date()).build();
         orderStatusMapper.insert(waitOrderStatus);
-
+        //设置需要删除的购物车信息
+        submitOrderBO.setTobeRemoveFromRedis(tobeRemoveFromRedis);
         return orderId;
 
     }

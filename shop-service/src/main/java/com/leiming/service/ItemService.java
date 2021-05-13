@@ -246,7 +246,7 @@ public class ItemService {
     public void decreaseItemSpecStock(String specId, int buyCounts) {
 
         int result = itemsMapperCustom.decreaseItemSpecStock(specId, buyCounts);
-        if (result - buyCounts < 0) {
+        if (result < 0) {
             throw new RuntimeException("订单创建失败，原因：库存不足!");
         }
     }
