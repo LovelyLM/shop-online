@@ -4,7 +4,6 @@
 /shop-mapper/target/
 /shop-pojo/target/
 /shop-service/target/
-
 /.idea/
 /shop-api/shop-api.iml
 /shop-common/shop-common.iml
