@@ -1,10 +1,10 @@
-/log/
-/shop-api/target/
-/shop-common/target/
-/shop-mapper/target/
-/shop-pojo/target/
-/shop-service/target/
-/.idea/
+/log/*
+/shop-api/target/*
+/shop-common/target/*
+/shop-mapper/target/*
+/shop-pojo/target/*
+/shop-service/target/*
+/.idea/*
 /shop-api/shop-api.iml
 /shop-common/shop-common.iml
 /shop-mapper/shop-mapper.iml
