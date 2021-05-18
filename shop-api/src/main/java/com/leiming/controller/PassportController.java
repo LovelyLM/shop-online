@@ -1,5 +1,7 @@
 package com.leiming.controller;
 
+import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONArray;
@@ -7,12 +9,14 @@ import cn.hutool.json.JSONUtil;
 import com.leiming.pojo.User;
 import com.leiming.pojo.bo.ShopcartBO;
 import com.leiming.pojo.bo.UserBo;
+import com.leiming.pojo.vo.UserVO;
 import com.leiming.service.UserService;
 import com.leiming.utils.CookieUtils;
 import com.leiming.utils.JsonResult;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -32,6 +36,7 @@ import java.util.stream.Collectors;
 @RequestMapping("passport")
 @Validated
 public class PassportController extends BaseController{
+    private final static String TOKEN_NAME = "lovelylm_token";
     @Resource
     private UserService userService;
     @Resource
@@ -61,8 +66,11 @@ public class PassportController extends BaseController{
      * @return 统一返回对象
      */
     @ApiOperation(value = "用户注册", notes = "用户注册", httpMethod = "POST")
-    @PostMapping("/register")
-    public JsonResult register(@RequestBody @Validated UserBo userBo){
+    @PostMapping("/regist")
+    @Transactional(rollbackFor = Exception.class)
+    public JsonResult register(@RequestBody @Validated UserBo userBo,
+                               HttpServletRequest request,
+                               HttpServletResponse response) throws UnsupportedEncodingException {
         //获取用户输入信息
         String password = StringUtils.deleteWhitespace(userBo.getPassword());
         String confirmPassword = StringUtils.deleteWhitespace(userBo.getConfirmPassword());
@@ -81,9 +89,17 @@ public class PassportController extends BaseController{
 
         //创建用户
         User user = userService.createUser(userBo);
+        //生成token并存入redis和cookie
+        String token = IdUtil.randomUUID();
+        redisTemplate.opsForValue().set(TOKEN_NAME + ":" + user.getId(), token);
+        UserVO userVO = new UserVO();
+        BeanUtil.copyProperties(user, userVO);
+        userVO.setUserToken(token);
+        CookieUtils.setCookie(request, response, "user", JSONUtil.toJsonStr(userVO), true);
+        //同步购物车信息
+        synchronizedShopData(user.getId(), request, response);
 
-
-        return JsonResult.ok(user);
+        return JsonResult.ok(userVO);
     }
 
     /**
@@ -100,6 +116,12 @@ public class PassportController extends BaseController{
         if (ObjectUtil.isAllEmpty(user)) {
             return JsonResult.errorMsg("用户名或密码错误");
         }
+        //生成token并存入redis和cookie
+        String token = IdUtil.randomUUID();
+        redisTemplate.opsForValue().set(TOKEN_NAME + ":" + user.getId(), token);
+        UserVO userVO = new UserVO();
+        BeanUtil.copyProperties(user, userVO);
+        userVO.setUserToken(token);
         String userJson = JSONUtil.toJsonStr(user);
         //存入用户信息到cookie
         CookieUtils.setCookie(request, response, "user", userJson, true);
@@ -114,13 +136,14 @@ public class PassportController extends BaseController{
      * @return 统一返回对象
      */
     @PostMapping("/logout")
-    public JsonResult logout(HttpServletResponse response,
+    public JsonResult logout(@RequestParam("userId") @NotEmpty(message = "用户id不能为空") String userId,
+                             HttpServletResponse response,
                              HttpServletRequest request) {
-        //清楚cookie
+        //清除cookie
         CookieUtils.deleteCookie(request, response, "user");
+        //清除redis
+        redisTemplate.delete(TOKEN_NAME + ":" + userId);
 
-        //TODO 生成用户token，存入redis会话
-        //TODO 同步购物车数据
 
         return JsonResult.ok();
     }
@@ -156,7 +179,7 @@ public class PassportController extends BaseController{
             redisTemplate.opsForValue().set("shopCart:" + userId, shopCartBOList);
         }
         //redis不为空，cookie为空，以redis为准
-        else if (ObjectUtil.isEmpty(redisShopCartBOList) && StrUtil.isEmpty(cookieShopCart)){
+        else if (ObjectUtil.isNotEmpty(redisShopCartBOList) && StrUtil.isEmpty(cookieShopCart)){
             String jsonStr = JSONUtil.toJsonStr(redisShopCartBOList);
             String encodeJson = URLEncoder.encode(jsonStr, "utf-8");
             CookieUtils.setCookie(request, response, "shopcart", encodeJson);

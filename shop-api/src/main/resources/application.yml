@@ -26,6 +26,8 @@ spring:
   redis:
     host: 192.168.50.40
     port: 6379
+  session:
+    store-type: redis
 
 
 mybatis:

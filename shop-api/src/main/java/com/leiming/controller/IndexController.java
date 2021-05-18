@@ -50,7 +50,6 @@ public class IndexController {
         List<Carousel> carouselList;
         if (StrUtil.isEmpty(carousels)){
             carouselList = carouselService.queryAll(YesOrNo.YSE.type);
-            String s = JSONUtil.toJsonStr(carouselList);
             redisTemplate.opsForValue().set("carousel", JSONUtil.toJsonStr(carouselList));
 
         } else {
